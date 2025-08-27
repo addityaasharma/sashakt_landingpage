@@ -1,48 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { Menu, X, ChevronDown } from "lucide-react"; // dropdown icon
+import { Menu, X, ChevronDown } from "lucide-react"; // icons
 
 // ✅ Categories (33 example categories)
 const categories = [
-  "Technology",
-  "Health",
-  "Finance",
-  "Travel",
-  "Education",
-  "Sports",
-  "Food",
-  "Fashion",
-  "Lifestyle",
-  "Fitness",
-  "Gaming",
-  "Business",
-  "Marketing",
-  "Real Estate",
-  "Music",
-  "Movies",
-  "Books",
-  "Science",
-  "Politics",
-  "History",
-  "DIY",
-  "Parenting",
-  "Spirituality",
-  "Self-Improvement",
-  "Art",
-  "Photography",
-  "Programming",
-  "AI & ML",
-  "Web Development",
-  "Startups",
-  "Crypto",
-  "Environment",
-  "Automobiles",
+  "Technology", "Health", "Finance", "Travel", "Education", "Sports",
+  "Food", "Fashion", "Lifestyle", "Fitness", "Gaming", "Business",
+  "Marketing", "Real Estate", "Music", "Movies", "Books", "Science",
+  "Politics", "History", "DIY", "Parenting", "Spirituality", "Self-Improvement",
+  "Art", "Photography", "Programming", "AI & ML", "Web Development", "Startups",
+  "Crypto", "Environment", "Automobiles",
 ];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showCategories, setShowCategories] = useState(false);
+  const [mobileCategories, setMobileCategories] = useState(false);
 
   return (
     <header className="h-[80px] w-full bg-[#283646] flex items-center px-6 relative">
@@ -63,7 +37,7 @@ const Header = () => {
               Categories <ChevronDown size={18} />
             </button>
             {showCategories && (
-              <div className="absolute top-full mt-2 bg-[#34495e] shadow-lg rounded-md w-[220px] max-h-[300px] overflow-y-auto">
+              <div className="absolute top-full mt-2 bg-[#34495e] shadow-lg rounded-md w-[220px] max-h-[300px] overflow-y-auto z-50">
                 {categories.map((cat, i) => (
                   <Link
                     key={i}
@@ -90,24 +64,35 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="absolute top-[80px] left-0 w-full bg-[#283646] flex flex-col items-center gap-6 py-6 md:hidden">
+        <div className="absolute top-[80px] left-0 w-full bg-[#283646] flex flex-col items-center gap-6 py-6 md:hidden z-40">
           <Link to="/" className="text-white text-lg" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" className="text-white text-lg" onClick={() => setIsOpen(false)}>About</Link>
 
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-white text-lg">Categories</p>
-            <div className="flex flex-col gap-2 max-h-[250px] overflow-y-auto">
-              {categories.map((cat, i) => (
-                <Link
-                  key={i}
-                  to={`/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="text-white text-md"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {cat}
-                </Link>
-              ))}
-            </div>
+          <div className="w-full flex flex-col items-center">
+            <button
+              className="flex items-center gap-1 text-white text-lg"
+              onClick={() => setMobileCategories(!mobileCategories)}
+            >
+              Categories <ChevronDown size={18} className={`${mobileCategories ? "rotate-180" : ""}`} />
+            </button>
+
+            {mobileCategories && (
+              <div className="flex flex-col gap-2 max-h-[250px] overflow-y-auto mt-2 w-full px-4">
+                {categories.map((cat, i) => (
+                  <Link
+                    key={i}
+                    to={`/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="text-white text-md hover:bg-[#2c3e50] px-2 py-1 rounded"
+                    onClick={() => {
+                      setIsOpen(false);
+                      setMobileCategories(false);
+                    }}
+                  >
+                    {cat}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
 
           <Link to="/blog" className="text-white text-lg" onClick={() => setIsOpen(false)}>Blog</Link>
