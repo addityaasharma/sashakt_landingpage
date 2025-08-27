@@ -1,20 +1,18 @@
-import React from 'react'
-import LandingPage from './components/LandingPage'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import FloatingEmbed from './components/FloatingEmbed'
-import HomePage from './pages/HomePage'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      {/* <LandingPage /> */}
-      <HomePage />
-      <FloatingEmbed />
-      <Footer />
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
