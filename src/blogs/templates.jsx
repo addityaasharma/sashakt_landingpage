@@ -9,6 +9,7 @@ import UniversalTemplate from "../pages/templates/UniversalTemplate";
 const templates = {
     education: (props) => <TemplateB blog={blogs.education} {...props} />,
     technology: (props) => <TemplateA blog={blogs.technology} {...props} />,
+    health: (props) => <TemplateA blog={blogs.technology} {...props} />,
     finance: (props) => <TemplateC blog={blogs.finance} {...props} />,
     sports: (props) => <UniversalTemplate blog={blogs.sports} {...props} />,
     travel: (props) => <UniversalTemplate blog={blogs.travel} {...props} />,
