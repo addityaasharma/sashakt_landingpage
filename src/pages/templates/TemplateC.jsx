@@ -1,106 +1,150 @@
+
 import React from "react";
 
 const TemplateC = ({ blog }) => {
     return (
-        <div className="p-8 bg-gradient-to-r from-green-100 to-green-50 shadow-lg rounded-2xl max-w-4xl mx-auto">
-            <h1 className="text-4xl font-extrabold text-green-700">{blog.title}</h1>
+        <div className="w-full sm:max-w-4xl mx-auto bg-gradient-to-br from-gray-50 via-green-50 to-gray-100 text-gray-900 rounded-2xl shadow-xl">
 
-            <p className="mt-4 text-gray-800 leading-relaxed">{blog.content}</p>
+            {/* Blog Header */}
+            <header className="px-4 sm:px-6 py-6 sm:py-8 border-b border-green-200">
+                <h1 className="text-3xl sm:text-4xl font-extrabold text-green-700 tracking-tight">
+                    💹 {blog.title}
+                </h1>
+                <p className="text-gray-600 text-sm mt-1">
+                    By {blog.author || "Finance Expert"} • {blog.date || "Not Published"}
+                </p>
+            </header>
 
-            {blog.images && blog.images.length > 0 && (
-                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {blog.images.map((img, idx) => (
-                        <img
-                            key={idx}
-                            src={img}
-                            alt={`blog-img-${idx}`}
-                            className="w-full rounded-lg shadow-md"
-                        />
-                    ))}
-                </div>
-            )}
+            {/* Blog Content */}
+            <div className="px-4 sm:px-6 py-6 space-y-6 text-gray-800 text-lg leading-relaxed">
 
-            {blog.video && (
-                <div className="mt-6">
-                    <iframe
-                        src={blog.video}
-                        title="Finance Video"
-                        className="w-full h-64 sm:h-96 rounded-lg"
-                        allowFullScreen
-                    ></iframe>
-                </div>
-            )}
+                {blog.content.map((block, idx) => {
+                    switch (block.type) {
+                        case "heading":
+                            return (
+                                <h2 key={idx} className="text-2xl sm:text-3xl font-bold text-green-700 mt-6">
+                                    {block.text}
+                                </h2>
+                            );
 
-            {blog.table && blog.table.length > 0 && (
-                <div className="mt-6 overflow-x-auto">
-                    <table className="w-full border border-gray-300 text-left text-gray-700">
-                        <thead className="bg-green-200">
-                            <tr>
-                                {Object.keys(blog.table[0]).map((header, idx) => (
-                                    <th key={idx} className="px-4 py-2 border">
-                                        {header}
-                                    </th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {blog.table.map((row, idx) => (
-                                <tr key={idx} className="even:bg-green-50">
-                                    {Object.values(row).map((cell, i) => (
-                                        <td key={i} className="px-4 py-2 border">
-                                            {cell}
-                                        </td>
+                        case "paragraph":
+                            return (
+                                <p key={idx} className="text-gray-800">{block.text}</p>
+                            );
+
+                        case "image":
+                            return (
+                                <div key={idx} className="my-4">
+                                    <img
+                                        src={block.src}
+                                        alt={block.alt}
+                                        className="w-full rounded-xl shadow-md border border-green-200 hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                            );
+
+                        case "video":
+                            return (
+                                <div key={idx} className="w-full aspect-video rounded-xl overflow-hidden shadow-lg my-4">
+                                    <iframe
+                                        src={block.src}
+                                        title={block.title || "Finance Video"}
+                                        className="w-full h-full"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            );
+
+                        case "table":
+                            return (
+                                <div key={idx} className="overflow-x-auto rounded-xl shadow-lg border border-green-200 my-4">
+                                    <table className="w-full text-left border-collapse">
+                                        <thead className="bg-green-100">
+                                            <tr>
+                                                {block.headers.map((header, hIdx) => (
+                                                    <th key={hIdx} className="px-4 py-2 border text-green-700 font-semibold">{header}</th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {block.rows.map((row, rIdx) => (
+                                                <tr key={rIdx} className="even:bg-green-50 hover:bg-green-100">
+                                                    {row.map((cell, cIdx) => (
+                                                        <td key={cIdx} className="px-4 py-2 border text-gray-800">{cell}</td>
+                                                    ))}
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            );
+
+                        case "ad":
+                            return (
+                                <div key={idx} className="p-6 bg-yellow-50 border border-yellow-300 rounded-xl text-center shadow-md my-4">
+                                    <h3 className="font-bold text-yellow-800">Sponsored</h3>
+                                    <p className="text-sm text-yellow-700 mt-2">{block.content}</p>
+                                    {block.image && (
+                                        <img
+                                            src={block.image}
+                                            alt="ad"
+                                            className="mx-auto mt-3 rounded-lg shadow-sm"
+                                        />
+                                    )}
+                                </div>
+                            );
+
+                        case "links":
+                            return (
+                                <div key={idx} className="space-y-2 my-4">
+                                    {block.items.map((link, lIdx) => (
+                                        <a
+                                            key={lIdx}
+                                            href={link.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-green-700 hover:text-green-900 underline block"
+                                        >
+                                            {link.label}
+                                        </a>
                                     ))}
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            )}
+                                </div>
+                            );
 
-            {blog.ads && (
-                <div className="mt-8 p-6 bg-yellow-100 border border-yellow-400 rounded-lg text-center shadow">
-                    <h3 className="font-bold text-yellow-800">Sponsored</h3>
-                    <p className="text-sm text-yellow-700 mt-2">{blog.ads.text}</p>
-                    {blog.ads.image && (
-                        <img
-                            src={blog.ads.image}
-                            alt="ad"
-                            className="mx-auto mt-3 rounded-lg"
-                        />
-                    )}
-                </div>
-            )}
+                        case "collage":
+                            return (
+                                <div key={idx} className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+                                    {block.items.map((img, cIdx) => (
+                                        <img
+                                            key={cIdx}
+                                            src={img}
+                                            alt={`collage-${cIdx}`}
+                                            className="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+                                        />
+                                    ))}
+                                </div>
+                            );
 
-            {blog.collage && blog.collage.length > 0 && (
-                <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    {blog.collage.map((img, idx) => (
-                        <img
-                            key={idx}
-                            src={img}
-                            alt={`collage-${idx}`}
-                            className="rounded-lg shadow-md"
-                        />
-                    ))}
-                </div>
-            )}
+                        default:
+                            return null;
+                    }
+                })}
 
+            </div>
+
+            {/* Comments Section */}
             {blog.comments && blog.comments.length > 0 && (
-                <div className="mt-10 border-t pt-6">
-                    <h2 className="text-2xl font-semibold text-green-700 mb-4">
-                        Comments
-                    </h2>
+                <div className="px-4 sm:px-6 py-6 border-t border-green-200 space-y-4">
+                    <h2 className="text-2xl font-semibold text-green-700">💬 Community Comments</h2>
                     {blog.comments.map((c, idx) => (
-                        <div
-                            key={idx}
-                            className="mb-4 p-4 bg-white rounded-lg shadow border border-gray-200"
-                        >
-                            <p className="font-bold text-gray-800">{c.user}</p>
-                            <p className="text-gray-600">{c.text}</p>
+                        <div key={idx} className="p-4 bg-white rounded-xl shadow border border-green-200">
+                            <p className="font-semibold text-green-800">{c.user}</p>
+                            <p className="text-gray-700">{c.comment}</p>
                         </div>
                     ))}
                 </div>
             )}
+
         </div>
     );
 };
