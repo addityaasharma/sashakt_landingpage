@@ -2784,7 +2784,7 @@ const blogs = {
         ]
     },
     
-    webdev: {
+    webdevelopment: {
         "title": "The Evolution of Modern Sports: From Ancient Games to Global Phenomenon",
         "author": "Sports Insights Team",
         "date": "2025-08-27",

@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
 import CategoryPage from "./pages/CategoryPage";
+import About from "./pages/About";
+import BlogPage from "./pages/BlogPage";
+import BlogDetail from "./pages/BlogDetail";
 
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/category/:slug" element={<CategoryPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:category" element={<BlogDetail />} />
         </Route>
       </Routes>
     </Router>

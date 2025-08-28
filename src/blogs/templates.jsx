@@ -34,7 +34,7 @@ const templates = {
     photography: (props) => <UniversalTemplate blog={blogs.photography} {...props} />,
     programming: (props) => <UniversalTemplate blog={blogs.programming} {...props} />,
     aiml: (props) => <UniversalTemplate blog={blogs.aiml} {...props} />,
-    wevdevelopment: (props) => <UniversalTemplate blog={blogs.webdev} {...props} />,
+    webdevelopment: (props) => <UniversalTemplate blog={blogs.webdevelopment} {...props} />,
     startups: (props) => <UniversalTemplate blog={blogs.startups} {...props} />,
     crypto: (props) => <UniversalTemplate blog={blogs.crypto} {...props} />,
     environment: (props) => <UniversalTemplate blog={blogs.environment} {...props} />,

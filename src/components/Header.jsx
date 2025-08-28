@@ -8,8 +8,8 @@ const categories = [
   "Technology", "Health", "Finance", "Travel", "Education", "Sports",
   "Food", "Fashion", "Lifestyle", "Fitness", "Gaming", "Business",
   "Marketing", "Real Estate", "Music", "Movies", "Books", "Science",
-  "Politics", "History", "DIY", "Parenting", "Spirituality", "Self-Improvement",
-  "Art", "Photography", "Programming", "AI & ML", "Web Development", "Startups",
+  "Politics", "History", "DIY", "Parenting", "Spirituality", "Self Improvement",
+  "Art", "Photography", "Programming", "AI ML", "Web Development", "Startups",
   "Crypto", "Environment", "Automobiles",
 ];
 
@@ -41,7 +41,7 @@ const Header = () => {
                 {categories.map((cat, i) => (
                   <Link
                     key={i}
-                    to={`/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+                    to={`/category/${cat.toLowerCase().replace(/\s+/g, "")}`}
                     className="block px-4 py-2 text-white hover:bg-[#2c3e50]"
                     onClick={() => setShowCategories(false)}
                   >
