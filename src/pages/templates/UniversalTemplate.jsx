@@ -6,12 +6,10 @@ const UniversalTemplate = ({ blog }) => {
 
     return (
         <div className="p-6 bg-white rounded-lg shadow-md space-y-6">
-            {/* Title */}
             {blog.title && (
                 <h1 className="text-4xl font-bold text-gray-900">{blog.title}</h1>
             )}
 
-            {/* Author & Date */}
             {(blog.author || blog.date) && (
                 <p className="text-sm text-gray-500">
                     {blog.author && <span>✍ {blog.author}</span>}
@@ -19,7 +17,6 @@ const UniversalTemplate = ({ blog }) => {
                 </p>
             )}
 
-            {/* Render content blocks */}
             {Array.isArray(blog.content) &&
                 blog.content.map((block, i) => {
                     switch (block.type) {
@@ -72,6 +69,29 @@ const UniversalTemplate = ({ blog }) => {
                                 </a>
                             );
 
+                        case "list":
+                            return (
+                                <ul key={i} className="list-disc list-inside mb-4">
+                                    {block.items?.map((item, index) => (
+                                        <li key={index} className="mb-1">
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            );
+
+                        case "faq":
+                            return (
+                                <div key={i} className="faq-section my-4">
+                                    {block.items.map((faq, index) => (
+                                        <div key={index} className="faq-item mb-2">
+                                            <strong>Q: {faq.question}</strong>
+                                            <p>A: {faq.answer}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            );
+                            
                         case "table":
                             return (
                                 <div key={i} className="overflow-x-auto">
