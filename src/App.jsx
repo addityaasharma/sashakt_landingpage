@@ -6,6 +6,7 @@ import CategoryPage from "./pages/CategoryPage";
 import About from "./pages/About";
 import BlogPage from "./pages/BlogPage";
 import BlogDetail from "./pages/BlogDetail";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:category" element={<BlogDetail />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Route>
       </Routes>
     </Router>
