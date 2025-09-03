@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Menu, X, ChevronDown } from "lucide-react"; // icons
 
-// ✅ Categories (33 example categories)
 const categories = [
   "Technology", "Health", "Finance", "Travel", "Education", "Sports",
   "Food", "Fashion", "Lifestyle", "Fitness", "Gaming", "Business",
@@ -20,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="h-[80px] w-full bg-[#283646] flex items-center px-6 relative">
-      <div className="h-[60px] w-[60px] flex-shrink-0">
+      <div className="h-[200px] w-[200px] flex-shrink-0">
         <img src={logo} alt="logo" className="h-full w-full object-contain" />
       </div>
 

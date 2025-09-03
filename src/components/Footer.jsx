@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Footer = () => {
     return (
         <>
@@ -7,13 +8,13 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
                     <div>
-                        <h2 className="text-lg font-bold text-white mb-3">LOGO HERE</h2>
+                        <h2 className="text-lg font-bold text-white mb-3">Scholaryy</h2>
                         <p className="text-sm leading-relaxed">
                             OurStudio is a digital agency UI / UX Design and Website Development
                             located in Ohio, United States of America
                         </p>
                         <p className="mt-4 text-xs text-gray-400">
-                            Copyright Satyam Studio
+                            Copyright Scholarlyy. All rights reserved.
                         </p>
                     </div>
 
