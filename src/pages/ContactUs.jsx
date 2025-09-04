@@ -8,13 +8,32 @@ const ContactUs = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Here you can send data to your backend or email service
-        console.log(form);
-        setSubmitted(true);
-        setForm({ name: "", email: "", message: "" });
+
+        try {
+            const response = await fetch(
+                "https://script.google.com/macros/s/AKfycby7WknHXXNpigtrEhUN0d3EV8KvxE2j9ixZbnLU2IINY9Y6ajmzqyZhM_65SukWVYtf1Q/exec",
+                {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: JSON.stringify(form),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+
+            const result = await response.json();
+            console.log("Google Sheet Response:", result);
+
+            setSubmitted(true);
+            setForm({ name: "", email: "", message: "" });
+        } catch (error) {
+            console.error("Error!", error);
+        }
     };
+
 
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-6 md:px-12">
@@ -24,7 +43,6 @@ const ContactUs = () => {
             </p>
 
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
-                {/* Contact Form */}
                 <form
                     onSubmit={handleSubmit}
                     className="bg-white p-8 rounded-lg shadow-lg flex flex-col gap-4"
@@ -72,7 +90,7 @@ const ContactUs = () => {
                 <div className="flex flex-col gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-gray-800">Email</h2>
-                        <p className="text-gray-600">support@example.com</p>
+                        <p className="text-gray-600">admin@scholarlyy.com</p>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-gray-800">Phone</h2>

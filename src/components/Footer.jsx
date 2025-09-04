@@ -8,10 +8,10 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
                     <div>
-                        <h2 className="text-lg font-bold text-white mb-3">Scholaryy</h2>
+                        <h2 className="text-lg font-bold text-white mb-3">Scholarlyy</h2>
                         <p className="text-sm leading-relaxed">
                             OurStudio is a digital agency UI / UX Design and Website Development
-                            located in Ohio, United States of America
+                            located in Raipur, Telibandha, Chhattisgarh.
                         </p>
                         <p className="mt-4 text-xs text-gray-400">
                             Copyright Scholarlyy. All rights reserved.
@@ -23,21 +23,21 @@ const Footer = () => {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-center gap-2">
                                 <span className="text-blue-400">📍</span>
-                                8819 Ohio St. South Gate, CA 90280
+                                Raipur, Rajendra Nagar, Golden Trade center.
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-blue-400">✉️</span>
-                                Ourstudio@hello.com
+                                sashaktenterprises@gmail.com
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-blue-400">📞</span>
-                                +1 386-688-3295
+                                +91 9575584999
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <div className="flex gap-3 mb-3">
+                        {/* <div className="flex gap-3 mb-3">
                             {["Dr", "Be", "Ig", "Tw"].map((s, i) => (
                                 <span
                                     key={i}
@@ -46,11 +46,10 @@ const Footer = () => {
                                     {s}
                                 </span>
                             ))}
-                        </div>
-                        <p className="text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod.
-                        </p>
+                        </div> */}
+                        {/* <p className="text-sm leading-relaxed">
+                            Connect through 
+                        </p> */}
                     </div>
 
                     <div>

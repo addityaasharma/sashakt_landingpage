@@ -4,7 +4,6 @@ import { BookOpen, Users, Star } from "lucide-react";
 const HomePage = () => {
     return (
         <>
-            {/* Hero Section */}
             <div className="min-h-screen flex flex-col md:flex-row items-center justify-between bg-gray-100 text-black px-6 md:px-20 lg:px-40">
                 <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left mt-10 md:mt-0">
                     <p className="text-xl md:text-2xl uppercase font-bold text-gray-700">
