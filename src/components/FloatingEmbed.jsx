@@ -6,7 +6,7 @@ const FloatingEmbed = () => {
     return (
         <>
             <motion.a
-                href="https://viral-ix.com/collections/print-on-demand"
+                href="https://t.me/+4aszd823mslmMjBl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-[120px] right-[40px] p-0 rounded-full shadow-lg z-50"

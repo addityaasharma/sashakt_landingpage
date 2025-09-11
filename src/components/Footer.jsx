@@ -29,7 +29,8 @@ const Footer = () => {
                                 <span className="text-blue-400">✉️</span>
                                 sashaktenterprises@gmail.com
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex
+                             items-center gap-2">
                                 <span className="text-blue-400">📞</span>
                                 +91 9575584999
                             </li>
