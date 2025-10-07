@@ -21,10 +21,7 @@ const HomePage = () => {
                         </button>
                     </div>
                     <p className="mt-8 text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptate
-                        nisi nulla maxime molestias est. Id culpa omnis sapiente rerum laborum
-                        officia voluptas porro totam iste rem, blanditiis deleniti a vitae ratione
-                        quae magnam quod aut quos alias ex quisquam.
+                        Welcome to Googly.com, your ultimate destination for insightful, engaging, and up-to-date blogs across a wide range of topics. Whether you’re a curious learner, a passionate professional, or someone who just loves to stay informed, Googly.com has something for everyone. Our platform is designed to bring together the best content from diverse fields, making it easy for readers to explore and discover blogs that match their interests.
                     </p>
                 </div>
 
@@ -42,11 +39,11 @@ const HomePage = () => {
                 <div className="w-full md:w-[35%] p-6 border-b md:border-b-0 md:border-r border-white">
                     <h1 className="text-2xl md:text-4xl font-bold">Vivamas Maximus</h1>
                     <p className="mt-4 text-sm md:text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, impedit!
+                        At Googly.com, we understand that knowledge is vast and ever-evolving. That’s why we cover a variety of categories including Technology, Health, Finance, Travel, Education, Sports, Food, Fashion, Lifestyle, Fitness, Gaming, Business, Marketing, Real Estate, Music, Movies, Books, Science, Politics, History, DIY, Parenting, Spirituality, Self-Improvement, Art, Photography, Programming, AI & ML, Web Development, Startups, Crypto, Environment, and Automobiles
                     </p>
                     <ul className="mt-4 space-y-1 list-disc list-inside text-sm">
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>Real Estate</li>
+                        <li>Fashion and LifeStyle</li>
                     </ul>
                 </div>
 
@@ -84,12 +81,11 @@ const HomePage = () => {
                         Strength in Numbers
                     </h2>
                     <p className="text-gray-600 leading-relaxed mb-6 text-sm md:text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga laborum
-                        rerum optio fugiat. Numquam impedit corporis eligendi, asperiores.
+                        Our goal is to make reading blogs a seamless and enjoyable experience. Googly.com features a clean, user-friendly interface that allows you to easily navigate between categories, discover trending topics, and access blogs that cater to your preferences. Each article is carefully curated to provide value, whether it’s practical advice, inspiring stories, or thought-provoking insights.
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm md:text-base">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Our team constantly updates the platform with fresh content.</li>
+                        <li>We cover a wide range of topics to cater to diverse interests.</li>
                     </ul>
                 </div>
             </div>

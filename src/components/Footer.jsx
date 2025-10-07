@@ -8,13 +8,12 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
                     <div>
-                        <h2 className="text-lg font-bold text-white mb-3">Scholarlyy</h2>
+                        <h2 className="text-lg font-bold text-white mb-3">Googlyy</h2>
                         <p className="text-sm leading-relaxed">
-                            OurStudio is a digital agency UI / UX Design and Website Development
-                            located in Raipur, Telibandha, Chhattisgarh.
+                            Googlyy is a creative digital platform based in Raipur, Telibandha, Chhattisgarh, specializing in UI/UX design, website development, and delivering high-quality blogs across multiple categories.
                         </p>
                         <p className="mt-4 text-xs text-gray-400">
-                            Copyright Scholarlyy. All rights reserved.
+                            Copyright Googlyy. All rights reserved.
                         </p>
                     </div>
 
