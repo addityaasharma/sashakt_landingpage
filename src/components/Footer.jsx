@@ -27,7 +27,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="text-blue-400">✉️</span>
-                                sashaktenterprises@gmail.com
+                                admin@googlyy.com
                             </li>
                             <li className="flex
                              items-center gap-2">

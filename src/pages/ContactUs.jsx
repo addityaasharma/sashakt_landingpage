@@ -90,20 +90,17 @@ const ContactUs = () => {
                 <div className="flex flex-col gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-gray-800">Email</h2>
-                        <p className="text-gray-600">admin@scholarlyy.com</p>
+                        <p className="text-gray-600">admin@googlyy.com</p>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-gray-800">Phone</h2>
-                        <p className="text-gray-600">+91 9876543210</p>
+                        <p className="text-gray-600">+91 9575584999</p>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-2 text-gray-800">Address</h2>
                         <p className="text-gray-600">
-                            123, Tech Park, Mumbai, India
+                            Chhattisgarh, Raipur, New Rajendra Nagar, Golden Trade Center - 521 Sashakt Enterprises
                         </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-lg h-64 flex items-center justify-center">
-                        <p className="text-gray-400">Map placeholder</p>
                     </div>
                 </div>
             </div>
