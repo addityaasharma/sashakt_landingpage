@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 
@@ -9,9 +10,9 @@
   <!-- Primary Meta Tags -->
   <meta name="title" content="Googlyy - Explore Trending Blogs Across All Categories">
   <meta name="description"
-    content="Googlyy is your go-to destination for trending, informative, and engaging blogs across all categories — technology, lifestyle, business, entertainment, travel, health, and more. Stay updated with the world’s most dynamic stories and insights.">
+    content="Googlyy is your destination for trending, informative, and inspiring blogs across all categories — tech, lifestyle, travel, business, entertainment, and more. Stay updated with the latest stories and insights from around the world.">
   <meta name="keywords"
-    content="googly, googlyy, google blogs, trending blogs, lifestyle, tech, news, entertainment, AI, business, sports, travel, food, health, Googlyy blogs">
+    content="googlyy, googly, google blogs, trending blogs, tech blogs, lifestyle blogs, news, entertainment, travel, food, business, AI, health, Googlyy blog">
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
   <meta name="author" content="Googlyy" />
@@ -24,21 +25,21 @@
   <meta property="og:url" content="https://www.googlyy.com/" />
   <meta property="og:title" content="Googlyy - Explore Trending Blogs Across All Categories" />
   <meta property="og:description"
-    content="Googlyy brings you diverse and engaging blogs in every niche — from AI to lifestyle and travel. Discover something new every day." />
+    content="Googlyy brings you diverse and engaging blogs — explore everything from technology and lifestyle to business and travel." />
   <meta property="og:image" content="https://www.googlyy.com/og-image.jpg" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://www.googlyy.com/" />
-  <meta property="twitter:title" content="Googlyy - Explore Trending Blogs Across All Categories" />
-  <meta property="twitter:description"
-    content="Read trending blogs and news on Googlyy — your hub for insights across tech, lifestyle, entertainment, business, and more." />
-  <meta property="twitter:image" content="https://www.googlyy.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.googlyy.com/" />
+  <meta name="twitter:title" content="Googlyy - Explore Trending Blogs Across All Categories" />
+  <meta name="twitter:description"
+    content="Read trending blogs and stories on Googlyy — your hub for tech, lifestyle, travel, and business insights." />
+  <meta name="twitter:image" content="https://www.googlyy.com/og-image.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./src/assets/logo.png" />
 
-  <!-- Structured Data (JSON-LD Schema Markup for SEO) -->
+  <!-- Structured Data (JSON-LD Schema for SEO) -->
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -54,12 +55,14 @@
       }
     </script>
 
-  <!-- Facebook Pixel -->
+  <!-- Facebook Pixel Code -->
   <script>
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
       };
       if (!f._fbq) f._fbq = n;
       n.push = n;
@@ -71,17 +74,18 @@
       t.src = v;
       s = b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
 
     fbq("init", "3352653878216203");
     fbq("track", "PageView");
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=3352653878216203&ev=PageView&noscript=1" />
-  </noscript>
 
-  <!-- Performance Enhancements -->
+  <!-- Performance & Appearance -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,6 +96,13 @@
 <body>
   <div id="root"></div>
 
+  <!-- Noscript (must be inside body for Vite) -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=3352653878216203&ev=PageView&noscript=1" alt="facebook pixel" />
+  </noscript>
+
+  <!-- Vite main entry -->
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
