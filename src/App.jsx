@@ -19,7 +19,6 @@ const TrackPageViews = () => {
   return null;
 };
 
-
 const App = () => {
   return (
     <Router>

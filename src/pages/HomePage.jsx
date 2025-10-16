@@ -1,5 +1,6 @@
 import React from "react";
 import { BookOpen, Users, Star } from "lucide-react";
+import BlogPage from "./BlogPage";
 
 const HomePage = () => {
     return (
@@ -61,6 +62,10 @@ const HomePage = () => {
                         <p className="text-center text-sm">Achieve excellence with us.</p>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <BlogPage/>
             </div>
 
             {/* About Us */}
