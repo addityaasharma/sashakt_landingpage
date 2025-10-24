@@ -1,5 +1,5 @@
-
 import React from "react";
+import AdsterraAd from "../../components/AdsterraAd";
 
 const TemplateC = ({ blog }) => {
     return (
@@ -17,7 +17,6 @@ const TemplateC = ({ blog }) => {
 
             {/* Blog Content */}
             <div className="px-4 sm:px-6 py-6 space-y-6 text-gray-800 text-lg leading-relaxed">
-
                 {blog.content.map((block, idx) => {
                     switch (block.type) {
                         case "heading":
@@ -81,16 +80,8 @@ const TemplateC = ({ blog }) => {
 
                         case "ad":
                             return (
-                                <div key={idx} className="p-6 bg-yellow-50 border border-yellow-300 rounded-xl text-center shadow-md my-4">
-                                    <h3 className="font-bold text-yellow-800">Sponsored</h3>
-                                    <p className="text-sm text-yellow-700 mt-2">{block.content}</p>
-                                    {block.image && (
-                                        <img
-                                            src={block.image}
-                                            alt="ad"
-                                            className="mx-auto mt-3 rounded-lg shadow-sm"
-                                        />
-                                    )}
+                                <div key={idx} className="my-6 flex justify-center">
+                                    <AdsterraAd />
                                 </div>
                             );
 
@@ -129,7 +120,6 @@ const TemplateC = ({ blog }) => {
                             return null;
                     }
                 })}
-
             </div>
 
             {/* Comments Section */}

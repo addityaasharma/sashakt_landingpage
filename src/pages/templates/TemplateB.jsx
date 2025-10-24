@@ -1,4 +1,5 @@
 import React from "react";
+import AdsterraAd from "../../components/AdsterraAd";
 
 const TemplateB = ({ blog }) => {
     return (
@@ -69,13 +70,6 @@ const TemplateB = ({ blog }) => {
                                 </div>
                             );
 
-                        case "ad":
-                            return (
-                                <div key={idx} className="bg-blue-950 text-blue-300 border border-blue-700 rounded-lg text-center shadow m-0 p-4">
-                                    {block.content}
-                                </div>
-                            );
-
                         case "table":
                             return (
                                 <div key={idx} className="overflow-x-auto my-0 sm:rounded-lg shadow w-full -mx-4 sm:mx-0">
@@ -115,6 +109,13 @@ const TemplateB = ({ blog }) => {
                                 >
                                     {block.text}
                                 </a>
+                            );
+
+                        case "ad":
+                            return (
+                                <div key={idx} className="my-6 flex justify-center">
+                                    <AdsterraAd />
+                                </div>
                             );
 
                         default:

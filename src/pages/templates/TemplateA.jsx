@@ -12,8 +12,9 @@ const TemplateA = ({ blog }) => {
                 <p className="text-gray-500 text-sm">By {blog.author} • {blog.date}</p>
             </header>
 
+            {/* Optional Ad after header */}
             <div>
-                <AdsterraAd/>
+                <AdsterraAd />
             </div>
 
             {/* Render Dynamic Content */}
@@ -108,6 +109,12 @@ const TemplateA = ({ blog }) => {
                                             </li>
                                         ))}
                                     </ul>
+                                </div>
+                            );
+                        case "ad":
+                            return (
+                                <div key={idx} className="my-6 flex justify-center">
+                                    <AdsterraAd />
                                 </div>
                             );
                         default:
