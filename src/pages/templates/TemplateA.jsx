@@ -1,4 +1,5 @@
 import React from "react";
+import AdsterraAd from "../../components/AdsterraAd";
 
 const TemplateA = ({ blog }) => {
     return (
@@ -10,6 +11,10 @@ const TemplateA = ({ blog }) => {
                 </h1>
                 <p className="text-gray-500 text-sm">By {blog.author} • {blog.date}</p>
             </header>
+
+            <div>
+                <AdsterraAd/>
+            </div>
 
             {/* Render Dynamic Content */}
             <section className="space-y-8 text-base sm:text-lg leading-relaxed text-gray-800 px-3 sm:px-6 md:px-10 pb-10">

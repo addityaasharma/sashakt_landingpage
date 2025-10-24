@@ -1,6 +1,7 @@
 import React from "react";
 import { BookOpen, Users, Star } from "lucide-react";
 import BlogPage from "./BlogPage";
+import AdsterraAd from "../components/AdsterraAd";
 
 const HomePage = () => {
     return (
@@ -25,7 +26,7 @@ const HomePage = () => {
                         Welcome to Googly.com, your ultimate destination for insightful, engaging, and up-to-date blogs across a wide range of topics. Whether you’re a curious learner, a passionate professional, or someone who just loves to stay informed, Googly.com has something for everyone. Our platform is designed to bring together the best content from diverse fields, making it easy for readers to explore and discover blogs that match their interests.
                     </p>
                 </div>
-
+                
                 <div className="w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0">
                     <img
                         src="https://solverwp.com/demo/react/edumint/assets/img/banner/1.png"
@@ -65,7 +66,15 @@ const HomePage = () => {
             </div>
 
             <div>
+                <AdsterraAd/>
+            </div>
+
+            <div>
                 <BlogPage/>
+            </div>
+
+            <div>
+                <AdsterraAd/>
             </div>
 
             {/* About Us */}

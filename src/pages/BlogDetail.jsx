@@ -1,43 +1,60 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import blogs from "../blogs/blog";
+import AdsterraAd from "../components/AdsterraAd"; // Ad component
 
 const BlogDetail = () => {
     const { category } = useParams();
     const blog = blogs[category];
 
-    if (!blog) return <p className="text-center mt-10">Blog not found</p>;
+    if (!blog)
+        return (
+            <p className="text-center mt-10 text-gray-600 text-lg">
+                Blog not found
+            </p>
+        );
 
     return (
         <div className="max-w-4xl mx-auto px-6 py-12">
+            {/* Blog Title */}
             <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
             <p className="text-gray-600 mb-8">
                 By {blog.author} • {blog.date}
             </p>
 
+            {/* Blog Content */}
             {blog.content.map((block, index) => {
                 switch (block.type) {
                     case "heading":
                         return (
-                            <h2 key={index} className="text-2xl font-semibold mt-6 mb-2">
+                            <h2
+                                key={index}
+                                className="text-2xl font-semibold mt-6 mb-2"
+                            >
                                 {block.text}
                             </h2>
                         );
+
                     case "paragraph":
                         return (
-                            <p key={index} className="text-gray-800 mt-2 mb-4">
+                            <p
+                                key={index}
+                                className="text-gray-800 mt-2 mb-4"
+                            >
                                 {block.text}
                             </p>
                         );
+
                     case "image":
                         return (
                             <img
                                 key={index}
                                 src={block.src}
                                 alt={block.alt || ""}
-                                className="my-6 w-full rounded-lg"
+                                className="my-6 w-full rounded-lg object-cover"
                             />
                         );
+
                     case "video":
                         return (
                             <div key={index} className="my-6">
@@ -48,20 +65,29 @@ const BlogDetail = () => {
                                     title={block.title || "Video"}
                                     frameBorder="0"
                                     allowFullScreen
+                                    className="rounded-lg"
                                 ></iframe>
                             </div>
                         );
+
                     case "list":
                         return (
-                            <ul key={index} className="list-disc list-inside my-4">
+                            <ul
+                                key={index}
+                                className="list-disc list-inside my-4 text-gray-800"
+                            >
                                 {block.items.map((item, idx) => (
                                     <li key={idx}>{item}</li>
                                 ))}
                             </ul>
                         );
+
                     case "table":
                         return (
-                            <div key={index} className="my-6 overflow-x-auto">
+                            <div
+                                key={index}
+                                className="my-6 overflow-x-auto"
+                            >
                                 <table className="min-w-full border-collapse border border-gray-300">
                                     <thead>
                                         <tr>
@@ -105,6 +131,7 @@ const BlogDetail = () => {
                                 {block.text || block.label}
                             </a>
                         );
+
                     case "links":
                         return (
                             <div key={index} className="my-4">
@@ -121,15 +148,14 @@ const BlogDetail = () => {
                                 ))}
                             </div>
                         );
+
                     case "ad":
                         return (
-                            <div
-                                key={index}
-                                className="bg-yellow-100 p-4 my-6 rounded text-center font-semibold"
-                            >
-                                {block.content}
+                            <div key={index}>
+                                <AdsterraAd />
                             </div>
                         );
+
                     default:
                         return null;
                 }
