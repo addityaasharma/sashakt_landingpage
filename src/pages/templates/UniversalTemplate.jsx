@@ -1,5 +1,6 @@
 // pages/templates/UniversalTemplate.jsx
 import React from "react";
+import AdsterraAd from "../../components/AdsterraAd"; // import your ad component
 
 const UniversalTemplate = ({ blog }) => {
     if (!blog) return <p className="text-red-500">⚠ No blog data provided</p>;
@@ -91,7 +92,7 @@ const UniversalTemplate = ({ blog }) => {
                                     ))}
                                 </div>
                             );
-                            
+
                         case "table":
                             return (
                                 <div key={i} className="overflow-x-auto">
@@ -127,12 +128,10 @@ const UniversalTemplate = ({ blog }) => {
                             );
 
                         case "ad":
+                            // Render your Adsterra ad component here
                             return (
-                                <div
-                                    key={i}
-                                    className="bg-yellow-50 border border-dashed border-yellow-400 p-4 text-center rounded-lg"
-                                >
-                                    <span className="text-yellow-800 font-medium">{block.content}</span>
+                                <div key={i} className="my-6 flex justify-center">
+                                    <AdsterraAd />
                                 </div>
                             );
 

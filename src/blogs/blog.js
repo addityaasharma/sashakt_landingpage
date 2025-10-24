@@ -20,6 +20,9 @@ const blogs = {
                 "alt": "Futuristic technology visualization"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Artificial Intelligence Leading the Way"
             },
@@ -43,6 +46,9 @@ const blogs = {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1581091870634-1e7b6c76a61e",
                 "alt": "Quantum computing visualization"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -139,6 +145,9 @@ const blogs = {
                 "text": "Getting Started: Content Creation for Beginners"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "If you’re new, start small. Many content creation for beginners guides suggest:\n- Picking a niche you’re passionate about (fashion, fitness, travel, tech).\n- Creating simple posts, reels, or blogs consistently.\n- Experimenting with free tools like Canva, CapCut, or Notion.\nWithin months, you’ll understand what your audience likes and how to improve your reach."
             },
@@ -157,6 +166,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The beauty of this career is that content creation ideas can turn into full-time income. For example:\n- Sharing content creation ideas for Instagram can help brands grow followers.\n- Creating viral TikToks or Reels can land you sponsorships.\n- Exploring content creation business ideas like agencies, courses, or digital products can turn passion into profit."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -217,6 +229,9 @@ const blogs = {
                 "text": "The global financial markets are evolving rapidly in 2025. Investors face a mix of opportunities and risks driven by technological innovation, economic shifts, and geopolitical events. Understanding emerging trends and tools is essential to navigate this dynamic environment effectively."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://source.unsplash.com/800x400/?finance,stockmarket",
                 "alt": "Financial market overview"
@@ -228,6 +243,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Artificial Intelligence is transforming trading by analyzing vast amounts of data and predicting market movements. Algorithmic trading allows institutions to execute large orders at optimal prices, improving efficiency and reducing risks."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "video",
@@ -325,6 +343,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -348,6 +369,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Sports in the Modern Era"
             },
@@ -363,6 +387,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "By the 20th century, sports had become a global affair. The FIFA World Cup and the Olympics transformed into international spectacles watched by millions. With the advent of television, sports stars like Muhammad Ali, Pelé, and Michael Jordan became household names."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -423,9 +450,15 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -444,6 +477,9 @@ const blogs = {
                     ["100 CE", "Gladiator Games", "Rome"],
                     ["1800s", "Cricket & Football", "England"]
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -521,6 +557,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -532,6 +571,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "table",
@@ -550,6 +592,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The 19th century marked a new era for sports. Football, cricket, basketball, and baseball became organized with official rules, leagues, and championships. Industrialization and urbanization provided people with more leisure time, and the rise of newspapers and later radio broadcasting popularized sports events."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "video",
@@ -624,6 +669,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -650,6 +698,9 @@ const blogs = {
                 "text": "The 19th century marked a new era for sports. Football, cricket, basketball, and baseball became organized with official rules, leagues, and championships. Industrialization and urbanization provided people with more leisure time, and the rise of newspapers and later radio broadcasting popularized sports events."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
@@ -665,6 +716,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "In the 21st century, technology has revolutionized sports. Instant replays, VAR in football, Hawk-Eye in tennis, and wearable fitness trackers provide real-time analytics. Streaming platforms allow fans to watch matches from anywhere in the world, while social media has turned athletes into influencers."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "image",
@@ -717,6 +771,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -728,6 +785,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "table",
@@ -746,6 +806,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The 19th century marked a new era for sports. Football, cricket, basketball, and baseball became organized with official rules, leagues, and championships. Industrialization and urbanization provided people with more leisure time, and the rise of newspapers and later radio broadcasting popularized sports events."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "video",
@@ -820,6 +883,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -838,6 +904,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Sports in the Modern Era"
             },
@@ -849,6 +918,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -918,6 +990,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -936,6 +1011,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Sports in the Modern Era"
             },
@@ -947,6 +1025,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -1016,6 +1097,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -1047,6 +1131,9 @@ const blogs = {
                 "title": "History of Sports Documentary"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "By the 20th century, sports had become a global affair. The FIFA World Cup and the Olympics transformed into international spectacles watched by millions. With the advent of television, sports stars like Muhammad Ali, Pelé, and Michael Jordan became household names."
             },
@@ -1062,6 +1149,9 @@ const blogs = {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1600185365524-6a9aeb0d4f07",
                 "alt": "Modern sports stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1114,6 +1204,9 @@ const blogs = {
                 "alt": ""
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Dropshipping Explained"
             },
@@ -1135,6 +1228,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "With the right dropshipping marketing strategy, even small stores can scale into global businesses."
             },
@@ -1146,11 +1242,9 @@ const blogs = {
                 "type": "paragraph",
                 "text": "Shopify dropshipping has become the most popular platform because it’s easy to use and integrates well with apps and suppliers. Many entrepreneurs also search for about Shopify dropshipping to understand how it works."
             },
-            // {
-            //     "type": "video",
-            //     "src": "",
-            //     "title": ""
-            // },
+            {
+                "type" : "ad"
+            },
             {
                 "type": "paragraph",
                 "text": "If you’re serious, you can take training such as:"
@@ -1226,12 +1320,18 @@ const blogs = {
                 "text": "Think about your day: you scroll Instagram, watch YouTube, maybe shop on Amazon. Every product you see is not just there—it’s marketed to you. Behind those ads and posts are digital marketers who know how to capture attention and turn clicks into sales. For today’s youth (18–35), learning digital marketing isn’t just another skill—it’s a gateway to high-income opportunities, side hustles, and global freelancing. Whether you choose an online social media marketing course or a digital marketing short course, this field grows faster than almost any other career path in 2025."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Why Digital Marketing Matters Now"
             },
             {
                 "type": "paragraph",
                 "text": "Businesses are shifting online at lightning speed. From small shops to billion-dollar brands, everyone needs visibility on the internet. That’s why there’s an explosion of demand for:"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "list",
@@ -1262,6 +1362,9 @@ const blogs = {
                     "Online Advertising: Running paid ads that generate ROI.",
                     "Analytics: Tracking performance with Google Analytics & tools."
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -1344,6 +1447,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -1360,6 +1466,9 @@ const blogs = {
                     ["100 CE", "Gladiator Games", "Rome"],
                     ["1800s", "Cricket & Football", "England"]
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1381,6 +1490,9 @@ const blogs = {
             {
                 "type": "heading",
                 "text": "Technology and Sports Today"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -1437,6 +1549,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -1460,6 +1575,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Sports in the Modern Era"
             },
@@ -1471,6 +1589,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -1535,9 +1656,15 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1558,6 +1685,9 @@ const blogs = {
                 ]
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Sports in the Modern Era"
             },
@@ -1573,6 +1703,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "By the 20th century, sports had become a global affair. The FIFA World Cup and the Olympics transformed into international spectacles watched by millions. With the advent of television, sports stars like Muhammad Ali, Pelé, and Michael Jordan became household names."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1633,6 +1766,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -1644,6 +1780,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "table",
@@ -1662,6 +1801,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The 19th century marked a new era for sports. Football, cricket, basketball, and baseball became organized with official rules, leagues, and championships. Industrialization and urbanization provided people with more leisure time, and the rise of newspapers and later radio broadcasting popularized sports events."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "video",
@@ -1731,9 +1873,15 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1742,6 +1890,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "table",
@@ -1760,6 +1911,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The 19th century marked a new era for sports. Football, cricket, basketball, and baseball became organized with official rules, leagues, and championships. Industrialization and urbanization provided people with more leisure time, and the rise of newspapers and later radio broadcasting popularized sports events."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "video",
@@ -1829,9 +1983,15 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1850,6 +2010,9 @@ const blogs = {
                     ["100 CE", "Gladiator Games", "Rome"],
                     ["1800s", "Cricket & Football", "England"]
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -1875,6 +2038,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "In the 21st century, technology has revolutionized sports. Instant replays, VAR in football, Hawk-Eye in tennis, and wearable fitness trackers provide real-time analytics. Streaming platforms allow fans to watch matches from anywhere in the world, while social media has turned athletes into influencers."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "image",
@@ -1927,6 +2093,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -1934,6 +2103,9 @@ const blogs = {
             {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -1961,6 +2133,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -2030,6 +2205,9 @@ const blogs = {
                 "alt": ""
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "What Is Ad Copywriting?"
             },
@@ -2042,6 +2220,9 @@ const blogs = {
                 "text": "Types of Ad Copy"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "list",
                 "items": [
                     "Facebook Ad Copy – Social ads need to be short, engaging, and emotionally appealing.",
@@ -2052,6 +2233,9 @@ const blogs = {
             {
                 "type": "heading",
                 "text": "Learning the Skills"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "list",
@@ -2142,6 +2326,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -2153,6 +2340,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "table",
@@ -2178,6 +2368,9 @@ const blogs = {
                 "title": "History of Sports Documentary"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "By the 20th century, sports had become a global affair. The FIFA World Cup and the Olympics transformed into international spectacles watched by millions. With the advent of television, sports stars like Muhammad Ali, Pelé, and Michael Jordan became household names."
             },
@@ -2193,6 +2386,9 @@ const blogs = {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1600185365524-6a9aeb0d4f07",
                 "alt": "Modern sports stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2253,6 +2449,9 @@ const blogs = {
                 "text": "Historians trace the earliest sports back to 3000 BCE, with wrestling and running contests recorded in Mesopotamia and Egypt. The Olympic Games in Greece became the foundation of organized competitions, where athletes competed in running, wrestling, and chariot racing. These events were not only about physical strength but also religious significance, as athletes dedicated their victories to the gods."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "table",
                 "headers": ["Era", "Popular Sport", "Region"],
                 "rows": [
@@ -2276,6 +2475,9 @@ const blogs = {
                 "title": "History of Sports Documentary"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "By the 20th century, sports had become a global affair. The FIFA World Cup and the Olympics transformed into international spectacles watched by millions. With the advent of television, sports stars like Muhammad Ali, Pelé, and Michael Jordan became household names."
             },
@@ -2291,6 +2493,9 @@ const blogs = {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1600185365524-6a9aeb0d4f07",
                 "alt": "Modern sports stadium"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2338,6 +2543,9 @@ const blogs = {
                 "text": "Human Resources (HR) is the backbone of every organization. From hiring the right talent to building a positive workplace culture, HR professionals make sure people and processes run smoothly. In today’s fast-changing world, companies are not just looking for employees—they’re looking for skilled HR professionals who can lead transformation. That’s why HR training and development has become one of the most sought-after career investments for ambitious professionals aged 18–35. Whether you enroll in HR short courses or a complete online HR course, learning human resource management opens doors to high-paying, future-ready roles."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.pexels.com/photos/5989928/pexels-photo-5989928.jpeg",
                 "alt": ""
@@ -2359,6 +2567,9 @@ const blogs = {
                 "text": "The right human resources training equips you with skills to manage people, resolve conflicts, and design effective systems."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "How You Can Learn HR Online"
             },
@@ -2373,6 +2584,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The best part? Most of these are affordable and can be completed in weeks, not years."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2471,6 +2685,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -2487,6 +2704,9 @@ const blogs = {
                     ["100 CE", "Gladiator Games", "Rome"],
                     ["1800s", "Cricket & Football", "England"]
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2512,6 +2732,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "In the 21st century, technology has revolutionized sports. Instant replays, VAR in football, Hawk-Eye in tennis, and wearable fitness trackers provide real-time analytics. Streaming platforms allow fans to watch matches from anywhere in the world, while social media has turned athletes into influencers."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "image",
@@ -2564,6 +2787,9 @@ const blogs = {
                 "text": "Sports have always been an integral part of human civilization, reflecting our physical endurance, mental strength, and cultural diversity. From the gladiator battles in ancient Rome to the sophisticated leagues of the modern era, sports have evolved into a multi-billion-dollar global industry. In this article, we’ll explore how sports have transformed over centuries, the impact of technology, and why they continue to unite people worldwide."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "image",
                 "src": "https://images.unsplash.com/photo-1505842465776-3d90f616310d",
                 "alt": "Ancient stadium"
@@ -2585,6 +2811,9 @@ const blogs = {
                     ["100 CE", "Gladiator Games", "Rome"],
                     ["1800s", "Cricket & Football", "England"]
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2610,6 +2839,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "In the 21st century, technology has revolutionized sports. Instant replays, VAR in football, Hawk-Eye in tennis, and wearable fitness trackers provide real-time analytics. Streaming platforms allow fans to watch matches from anywhere in the world, while social media has turned athletes into influencers."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "image",
@@ -2670,6 +2902,9 @@ const blogs = {
                 "text": "If you’re between 18 and 35, ambitious, and looking for a skill that pays well, grows fast, and gives you creative freedom—taking a UX design course or UI design course is not just an option. It’s the next big opportunity."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Problem: Why Good Design Matters"
             },
@@ -2688,6 +2923,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "Here’s the truth: Design isn’t decoration. Design is conversion. It’s the difference between someone clicking “Buy Now” or closing the tab."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2810,6 +3048,9 @@ const blogs = {
                 "text": "From personalized Netflix recommendations to smart assistants like Siri, artificial intelligence (AI) has quietly become part of our daily lives. For students, professionals, and entrepreneurs (18–35), understanding AI is no longer optional—it’s a career advantage. Whether you’re curious about what AI is, how to learn AI, or looking for the right AI course, 2025 is the best time to start."
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "What AI Is and Why It Matters"
             },
@@ -2824,6 +3065,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "For beginners, there are multiple paths:\n- Enroll in an AI course that teaches fundamentals.\n- Take a crash course AI if you want a quick introduction.\n- Explore platforms like AI Tutorialspoint for structured learning.\n- Try specialized options like an Open AI course or a Fast AI course to build applied skills.\nThe best part? Many of these programs are affordable and beginner-friendly."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2879,6 +3123,9 @@ const blogs = {
                 "alt": ""
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "Who Is a Full Stack Developer?"
             },
@@ -2911,6 +3158,9 @@ const blogs = {
                     "Full Stack Web Developer Course – Focuses on building websites and apps with both front-end and back-end technologies.",
                     "Full Stack Developer Course Near Me – Ideal for those looking for online training or local institutes."
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -2983,6 +3233,9 @@ const blogs = {
             {
                 "type": "paragraph",
                 "text": "The digital revolution has changed how people shop, and ecommerce is at the heart of it. From groceries to gadgets, everything can be purchased online with just a few clicks. For young entrepreneurs and small business owners, starting an ecommerce business is one of the most profitable opportunities in 2025. Whether you’re curious about Shopify ecommerce, wondering about the best ecommerce platform for small business, or exploring how to start ecommerce on Amazon, this guide is your roadmap."
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "image",
@@ -3117,6 +3370,9 @@ const blogs = {
                 "text": "Introduction: Why Payment Gateways Matter in 2025"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "paragraph",
                 "text": "In the fast-growing world of e-commerce, smooth and secure transactions are everything. Whether you’re running a Shopify store, a WooCommerce site, or your own e-commerce platform, choosing the best payment gateway is crucial. From handling credit cards to UPI payments, gateways simplify checkout and build customer trust. For entrepreneurs and small businesses, finding the best payment processor for small business can make or break online growth."
             },
@@ -3144,6 +3400,9 @@ const blogs = {
                     "WooCommerce Payments – Designed for WordPress stores, this option helps businesses easily accept cards, wallets, and local payments.",
                     "Ecommerce Payment Gateway Solutions – Platforms like PayPal, Razorpay, and Stripe are leading choices for small and medium businesses worldwide."
                 ]
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "heading",
@@ -3231,6 +3490,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -3260,6 +3522,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
@@ -3329,6 +3594,9 @@ const blogs = {
                 "alt": "Ancient stadium"
             },
             {
+                "type" : "ad"
+            },
+            {
                 "type": "heading",
                 "text": "The Ancient Roots of Sports"
             },
@@ -3358,6 +3626,9 @@ const blogs = {
                 "type": "video",
                 "src": "https://www.youtube.com/embed/aqz-KE-bpKQ",
                 "title": "History of Sports Documentary"
+            },
+            {
+                "type" : "ad"
             },
             {
                 "type": "paragraph",
