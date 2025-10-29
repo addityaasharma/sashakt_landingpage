@@ -1,25 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const AdsterraAd = () => {
+    const adRef = useRef(null);
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "//pl27915875.effectivegatecpm.com/a3/c9/44/a3c94460043413cf6832bac4b7f37fb7.js";
+        script.src = "https://pl27915875.effectivegatecpm.com/a3/c9/44/a3c94460043413cf6832bac4b7f37fb7.js";
         script.async = true;
 
         script.onload = () => setLoaded(true);
 
-        document.body.appendChild(script);
+        if (adRef.current) {
+            adRef.current.appendChild(script);
+        }
 
         return () => {
-            document.body.removeChild(script);
+            if (adRef.current) {
+                adRef.current.innerHTML = "";
+            }
         };
     }, []);
 
     return (
         <div
-            id="adsterra-ad"
+            ref={adRef}
             style={{
                 width: "100%",
                 maxWidth: "300px",
@@ -34,7 +39,7 @@ const AdsterraAd = () => {
             }}
         >
             {!loaded && (
-                <span className="text-gray-400 text-sm">Loading ad…</span>
+                <span style={{ color: "#999", fontSize: "14px" }}>Loading ad…</span>
             )}
         </div>
     );
