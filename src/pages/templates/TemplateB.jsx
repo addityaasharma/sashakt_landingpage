@@ -5,18 +5,15 @@ const TemplateB = ({ blog }) => {
     return (
         <div className="w-full sm:max-w-7xl sm:mx-auto bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-gray-100 sm:rounded-xl shadow-lg p-0 sm:p-6">
 
-            {/* Title */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-400 leading-snug tracking-tight m-0 p-4 sm:p-0">
                 🚀 {blog.title}
             </h1>
 
-            {/* Author & Date */}
             <div className="flex flex-wrap items-center gap-4 text-gray-400 text-sm border-b border-blue-700 mb-0 px-4 sm:px-0 pb-4">
                 <span>✍️ {blog.author || "Unknown Author"}</span>
                 <span>📅 {blog.date || "Not Published"}</span>
             </div>
 
-            {/* Render Dynamic Content */}
             <div className="space-y-8 text-lg leading-relaxed mt-0 px-4 sm:px-0 py-4 sm:py-0">
                 {blog.content.map((block, idx) => {
                     switch (block.type) {
@@ -114,7 +111,7 @@ const TemplateB = ({ blog }) => {
                         case "ad":
                             return (
                                 <div key={idx} className="my-6 flex justify-center">
-                                    <AdsterraAd scriptSrc="//www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js" />
+                                    <AdsterraAd/>
                                 </div>
                             );
 
@@ -124,7 +121,6 @@ const TemplateB = ({ blog }) => {
                 })}
             </div>
 
-            {/* Comments */}
             <div className="mt-4 px-4 sm:px-0 pb-4 sm:pb-0">
                 <h2 className="text-2xl font-semibold text-blue-300 mb-2">💬 Community Comments</h2>
                 <div className="space-y-2">

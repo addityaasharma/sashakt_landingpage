@@ -5,7 +5,6 @@ const TemplateC = ({ blog }) => {
     return (
         <div className="w-full sm:max-w-4xl mx-auto bg-gradient-to-br from-gray-50 via-green-50 to-gray-100 text-gray-900 rounded-2xl shadow-xl">
 
-            {/* Blog Header */}
             <header className="px-4 sm:px-6 py-6 sm:py-8 border-b border-green-200">
                 <h1 className="text-3xl sm:text-4xl font-extrabold text-green-700 tracking-tight">
                     💹 {blog.title}
@@ -15,7 +14,6 @@ const TemplateC = ({ blog }) => {
                 </p>
             </header>
 
-            {/* Blog Content */}
             <div className="px-4 sm:px-6 py-6 space-y-6 text-gray-800 text-lg leading-relaxed">
                 {blog.content.map((block, idx) => {
                     switch (block.type) {
@@ -81,7 +79,7 @@ const TemplateC = ({ blog }) => {
                         case "ad":
                             return (
                                 <div key={idx} className="my-6 flex justify-center">
-                                    <AdsterraAd scriptSrc="//www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js"/>
+                                    <AdsterraAd/>
                                 </div>
                             );
 

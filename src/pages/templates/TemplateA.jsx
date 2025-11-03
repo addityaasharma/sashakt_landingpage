@@ -5,7 +5,6 @@ import AdsterraSocialBar from "../../components/AdsterraSocialBar";
 const TemplateA = ({ blog }) => {
     return (
         <div className="w-full bg-gradient-to-r from-gray-50 via-white to-blue-50 shadow-xl rounded-none md:rounded-2xl md:space-y-10">
-            {/* Blog Header */}
             <header className="text-center space-y-3 px-3 sm:px-6 md:px-10 py-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {blog.title}
@@ -13,12 +12,10 @@ const TemplateA = ({ blog }) => {
                 <p className="text-gray-500 text-sm">By {blog.author} • {blog.date}</p>
             </header>
 
-            {/* Optional Ad after header */}
             <div>
-                <AdsterraAd scriptSrc="//www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js" />
+                <AdsterraAd/>
             </div>
 
-            {/* Render Dynamic Content */}
             <section className="space-y-8 text-base sm:text-lg leading-relaxed text-gray-800 px-3 sm:px-6 md:px-10 pb-10">
                 {blog.content?.map((block, idx) => {
                     switch (block.type) {
