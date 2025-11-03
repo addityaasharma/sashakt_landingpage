@@ -6,11 +6,10 @@ const AdsterraAd = ({ showDebug = false }) => {
     const timeoutRef = useRef(null);
 
     useEffect(() => {
-        // Check for ad blocker
         const checkAdBlocker = () => {
-            const testAd = document.createElement('div');
-            testAd.className = 'ad advertisement adsbox';
-            testAd.style.cssText = 'position:absolute;width:1px;height:1px;';
+            const testAd = document.createElement("div");
+            testAd.className = "ad advertisement adsbox";
+            testAd.style.cssText = "position:absolute;width:1px;height:1px;";
             document.body.appendChild(testAd);
 
             setTimeout(() => {
@@ -19,29 +18,40 @@ const AdsterraAd = ({ showDebug = false }) => {
                 }
                 try {
                     document.body.removeChild(testAd);
-                } catch (e) {
-                    // Ignore
+                } catch {
+                    // ignore
                 }
             }, 100);
         };
 
         checkAdBlocker();
 
-        // Create ad script
-        const script = document.createElement("script");
-        script.src = "https://pl27915875.effectivegatecpm.com/a3/c9/44/a3c94460043413cf6832bac4b7f37fb7.js";
-        script.async = true;
-        script.type = "text/javascript";
+        const configScript = document.createElement("script");
+        configScript.type = "text/javascript";
+        configScript.innerHTML = `
+      atOptions = {
+        'key' : '24cfcce803380b677dd0e174b93362b2',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    `;
 
-        script.onload = () => {
+        const invokeScript = document.createElement("script");
+        invokeScript.type = "text/javascript";
+        invokeScript.src =
+            "https://www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js";
+        invokeScript.async = true;
+
+        invokeScript.onload = () => {
             setAdStatus("loaded");
 
-            // Check if ad actually rendered
             timeoutRef.current = setTimeout(() => {
                 if (adRef.current) {
-                    const hasContent = adRef.current.children.length > 1 ||
-                        adRef.current.querySelector('iframe') ||
-                        adRef.current.querySelector('img');
+                    const hasContent =
+                        adRef.current.querySelector("iframe") ||
+                        adRef.current.querySelector("img");
 
                     if (!hasContent) {
                         setAdStatus("failed");
@@ -50,48 +60,42 @@ const AdsterraAd = ({ showDebug = false }) => {
             }, 3000);
         };
 
-        script.onerror = () => {
+        invokeScript.onerror = () => {
             setAdStatus("failed");
         };
 
         if (adRef.current) {
-            adRef.current.appendChild(script);
+            adRef.current.appendChild(configScript);
+            adRef.current.appendChild(invokeScript);
         }
 
-        // Cleanup
         return () => {
-            if (timeoutRef.current) {
-                clearTimeout(timeoutRef.current);
-            }
-
-            if (adRef.current) {
-                try {
-                    while (adRef.current.firstChild) {
-                        adRef.current.removeChild(adRef.current.firstChild);
-                    }
-                } catch (e) {
-                    try {
-                        adRef.current.innerHTML = "";
-                    } catch (err) {
-                        // Ignore
-                    }
-                }
-            }
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
+            if (adRef.current) adRef.current.innerHTML = "";
         };
     }, []);
 
     const renderPlaceholder = () => {
         if (adStatus === "blocked") {
             return (
-                <div style={{
-                    padding: "20px",
-                    textAlign: "center",
-                    backgroundColor: "#fff3cd",
-                    borderRadius: "8px",
-                    border: "1px solid #ffc107"
-                }}>
+                <div
+                    style={{
+                        padding: "20px",
+                        textAlign: "center",
+                        backgroundColor: "#fff3cd",
+                        borderRadius: "8px",
+                        border: "1px solid #ffc107",
+                    }}
+                >
                     <div style={{ fontSize: "24px", marginBottom: "10px" }}>🛡️</div>
-                    <div style={{ color: "#856404", fontSize: "14px", marginBottom: "8px", fontWeight: "600" }}>
+                    <div
+                        style={{
+                            color: "#856404",
+                            fontSize: "14px",
+                            marginBottom: "8px",
+                            fontWeight: "600",
+                        }}
+                    >
                         Ad Blocker Detected
                     </div>
                     <div style={{ color: "#856404", fontSize: "12px" }}>
@@ -103,15 +107,24 @@ const AdsterraAd = ({ showDebug = false }) => {
 
         if (adStatus === "failed") {
             return (
-                <div style={{
-                    padding: "20px",
-                    textAlign: "center",
-                    backgroundColor: "#f8f9fa",
-                    borderRadius: "8px",
-                    border: "1px solid #dee2e6"
-                }}>
+                <div
+                    style={{
+                        padding: "20px",
+                        textAlign: "center",
+                        backgroundColor: "#f8f9fa",
+                        borderRadius: "8px",
+                        border: "1px solid #dee2e6",
+                    }}
+                >
                     <div style={{ fontSize: "24px", marginBottom: "10px" }}>📢</div>
-                    <div style={{ color: "#6c757d", fontSize: "14px", marginBottom: "8px", fontWeight: "600" }}>
+                    <div
+                        style={{
+                            color: "#6c757d",
+                            fontSize: "14px",
+                            marginBottom: "8px",
+                            fontWeight: "600",
+                        }}
+                    >
                         Advertisement
                     </div>
                     <div style={{ color: "#6c757d", fontSize: "12px" }}>
@@ -122,69 +135,77 @@ const AdsterraAd = ({ showDebug = false }) => {
         }
 
         return (
-            <div style={{
-                padding: "20px",
-                textAlign: "center"
-            }}>
-                <div style={{
-                    width: "40px",
-                    height: "40px",
-                    border: "3px solid #f3f3f3",
-                    borderTop: "3px solid #3498db",
-                    borderRadius: "50%",
-                    animation: "spin 1s linear infinite",
-                    margin: "0 auto 10px"
-                }} />
+            <div style={{ padding: "20px", textAlign: "center" }}>
+                <div
+                    style={{
+                        width: "40px",
+                        height: "40px",
+                        border: "3px solid #f3f3f3",
+                        borderTop: "3px solid #3498db",
+                        borderRadius: "50%",
+                        animation: "spin 1s linear infinite",
+                        margin: "0 auto 10px",
+                    }}
+                />
                 <div style={{ color: "#999", fontSize: "14px" }}>Loading...</div>
                 <style>{`
-                    @keyframes spin {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
-                    }
-                `}</style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
             </div>
         );
     };
 
     return (
-        <div style={{
-            width: "100%",
-            maxWidth: "300px",
-            minHeight: "250px",
-            margin: "20px auto",
-            borderRadius: "10px",
-            overflow: "hidden",
-            backgroundColor: "#f3f3f3",
-            position: "relative"
-        }}>
+        <div
+            style={{
+                width: "100%",
+                maxWidth: "320px",
+                minHeight: "50px",
+                margin: "20px auto",
+                borderRadius: "10px",
+                overflow: "hidden",
+                backgroundColor: "#f3f3f3",
+                position: "relative",
+            }}
+        >
             <div
                 ref={adRef}
                 style={{
                     width: "100%",
-                    minHeight: "250px",
+                    minHeight: "50px",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
                 }}
             >
                 {adStatus !== "loaded" && renderPlaceholder()}
             </div>
 
             {showDebug && (
-                <div style={{
-                    position: "absolute",
-                    top: "5px",
-                    right: "5px",
-                    padding: "4px 8px",
-                    borderRadius: "4px",
-                    fontSize: "10px",
-                    fontWeight: "bold",
-                    backgroundColor: adStatus === "loaded" ? "#4CAF50" :
-                        adStatus === "blocked" ? "#ff9800" :
-                            adStatus === "failed" ? "#f44336" : "#2196F3",
-                    color: "white",
-                    zIndex: 1000
-                }}>
+                <div
+                    style={{
+                        position: "absolute",
+                        top: "5px",
+                        right: "5px",
+                        padding: "4px 8px",
+                        borderRadius: "4px",
+                        fontSize: "10px",
+                        fontWeight: "bold",
+                        backgroundColor:
+                            adStatus === "loaded"
+                                ? "#4CAF50"
+                                : adStatus === "blocked"
+                                    ? "#ff9800"
+                                    : adStatus === "failed"
+                                        ? "#f44336"
+                                        : "#2196F3",
+                        color: "white",
+                        zIndex: 1000,
+                    }}
+                >
                     {adStatus}
                 </div>
             )}
