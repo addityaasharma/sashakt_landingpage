@@ -69,7 +69,6 @@ const HomePage = () => {
             <div>
                 <AdsterraAd />
             </div>
-
             <div>
                 <BlogPage />
             </div>
