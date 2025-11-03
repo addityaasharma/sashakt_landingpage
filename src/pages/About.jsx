@@ -4,7 +4,6 @@ import { Users, Globe, Award } from "lucide-react";
 const About = () => {
     return (
         <>
-            {/* Hero Section */}
             <div className="min-h-screen flex flex-col md:flex-row items-center justify-between bg-gray-50 text-black px-6 md:px-20 lg:px-40 py-12">
                 <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left mt-10 md:mt-0">
                     <p className="text-xl md:text-2xl uppercase font-bold text-gray-700">
@@ -29,7 +28,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Stats Section */}
             <div className="max-w-6xl mx-auto my-12 grid grid-cols-1 sm:grid-cols-3 gap-6 px-6">
                 <div className="flex flex-col items-center bg-[#002147] text-white rounded-xl p-6 shadow-md">
                     <Users size={36} className="mb-3" />
@@ -48,7 +46,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Mission & Vision */}
             <div className="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-8 px-6">
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                     <img
@@ -76,7 +73,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Team Section */}
             <div className="max-w-6xl mx-auto my-12 px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
                     Meet Our Team

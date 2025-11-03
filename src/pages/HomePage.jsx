@@ -104,7 +104,6 @@ const HomePage = () => {
                 </div>
             </div>
 
-            {/* Contact */}
             <div className="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center bg-amber-300/50 gap-8 p-6 md:p-10 rounded-xl shadow-md">
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                     <img
@@ -114,7 +113,6 @@ const HomePage = () => {
                     />
                 </div>
 
-                {/* Right: Contact Form */}
                 <div className="w-full md:w-1/2">
                     <p className="text-base md:text-lg uppercase tracking-wide text-gray-500 font-semibold">
                         Contact Us -

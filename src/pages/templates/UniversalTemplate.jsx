@@ -1,4 +1,3 @@
-// pages/templates/UniversalTemplate.jsx
 import React from "react";
 import AdsterraAd from "../../components/AdsterraAd"; // import your ad component
 

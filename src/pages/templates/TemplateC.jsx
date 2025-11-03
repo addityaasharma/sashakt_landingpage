@@ -120,7 +120,6 @@ const TemplateC = ({ blog }) => {
                 })}
             </div>
 
-            {/* Comments Section */}
             {blog.comments && blog.comments.length > 0 && (
                 <div className="px-4 sm:px-6 py-6 border-t border-green-200 space-y-4">
                     <h2 className="text-2xl font-semibold text-green-700">💬 Community Comments</h2>

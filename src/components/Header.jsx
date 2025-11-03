@@ -19,16 +19,10 @@ const Header = () => {
 
   return (
     <header className="h-[80px] w-full bg-[#283646] flex items-center px-6 relative">
-      {/* Logo / Heading */}
       <div className="h-[200px] w-[200px] flex-shrink-0 flex items-center">
-        {/* You can use text */}
         <h1 className="text-amber-50 text-2xl font-bold">Googlyy</h1>
-
-        {/* Or replace with image logo if needed */}
-        {/* <img src={logo} alt="Googly" className="h-12 w-auto" /> */}
       </div>
 
-      {/* Desktop Navigation */}
       <div className="flex-1 hidden md:flex justify-center">
         <nav className="flex gap-8 text-white text-lg font-medium items-center relative">
           <Link to="/">Home</Link>
@@ -62,14 +56,12 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Mobile Menu Button */}
       <div className="md:hidden ml-auto">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-[80px] left-0 w-full bg-[#283646] flex flex-col items-center gap-6 py-6 md:hidden z-40">
           <Link to="/" className="text-white text-lg" onClick={() => setIsOpen(false)}>Home</Link>
