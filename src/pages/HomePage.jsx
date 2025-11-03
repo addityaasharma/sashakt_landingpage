@@ -78,7 +78,6 @@ const HomePage = () => {
                 <AdsterraSocialBar />
             </div>
 
-            {/* About Us */}
             <div className="max-w-6xl mx-auto my-12 flex flex-col md:flex-row items-center gap-8 px-6">
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                     <img
