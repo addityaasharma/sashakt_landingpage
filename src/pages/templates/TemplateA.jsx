@@ -1,5 +1,6 @@
 import React from "react";
 import AdsterraAd from "../../components/AdsterraAd";
+import AdsterraSocialBar from "../../components/AdsterraSocialBar";
 
 const TemplateA = ({ blog }) => {
     return (
@@ -14,7 +15,7 @@ const TemplateA = ({ blog }) => {
 
             {/* Optional Ad after header */}
             <div>
-                <AdsterraAd />
+                <AdsterraAd scriptSrc="//www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js" />
             </div>
 
             {/* Render Dynamic Content */}
@@ -114,7 +115,7 @@ const TemplateA = ({ blog }) => {
                         case "ad":
                             return (
                                 <div key={idx} className="my-6 flex justify-center">
-                                    <AdsterraAd />
+                                    <AdsterraSocialBar/>
                                 </div>
                             );
                         default:

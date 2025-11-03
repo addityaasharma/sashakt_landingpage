@@ -152,7 +152,7 @@ const BlogDetail = () => {
                     case "ad":
                         return (
                             <div key={index}>
-                                <AdsterraAd />
+                                <AdsterraAd scriptSrc="//www.highperformanceformat.com/24cfcce803380b677dd0e174b93362b2/invoke.js"/>
                             </div>
                         );
 
