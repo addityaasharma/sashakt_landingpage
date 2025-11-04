@@ -47,7 +47,7 @@ const ContactUs = () => {
         </button>
       </div>
 
-      <h1 className="text-4xl font-bold text-center mb-6">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 mt-20">Contact Us</h1>
       <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
         We'd love to hear from you! Fill out the form below and we'll get back to
         you as soon as possible.

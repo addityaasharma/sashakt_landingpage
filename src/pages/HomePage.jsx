@@ -130,7 +130,7 @@ const HomePage = () => {
       </div>
 
       {/* Blog Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 mt-50">
         <BlogPage darkMode={darkMode} />
       </div>
 

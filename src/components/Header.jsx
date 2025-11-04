@@ -3,12 +3,39 @@ import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const categories = [
-  "Technology", "Health", "Finance", "Travel", "Education", "Sports",
-  "Food", "Fashion", "Lifestyle", "Fitness", "Gaming", "Business",
-  "Marketing", "Real Estate", "Music", "Movies", "Books", "Science",
-  "Politics", "History", "DIY", "Parenting", "Spirituality", "Self Improvement",
-  "Art", "Photography", "Programming", "AI ML", "Web Development", "Startups",
-  "Crypto", "Environment", "Automobiles",
+  "Technology",
+  "Health",
+  "Finance",
+  "Travel",
+  "Education",
+  "Sports",
+  "Food",
+  "Fashion",
+  "Lifestyle",
+  "Fitness",
+  "Gaming",
+  "Business",
+  "Marketing",
+  "Real Estate",
+  "Music",
+  "Movies",
+  "Books",
+  "Science",
+  "Politics",
+  "History",
+  "DIY",
+  "Parenting",
+  "Spirituality",
+  "Self Improvement",
+  "Art",
+  "Photography",
+  "Programming",
+  "AI ML",
+  "Web Development",
+  "Startups",
+  "Crypto",
+  "Environment",
+  "Automobiles",
 ];
 
 const Header = () => {
@@ -48,7 +75,7 @@ const Header = () => {
         hideHeader ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between ">
         {/* Logo */}
         <Link
           to="/"

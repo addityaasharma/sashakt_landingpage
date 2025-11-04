@@ -10,7 +10,7 @@ const BlogPage = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 transition-colors duration-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="max-w-7xl mx-auto px-6 py-12 transition-colors duration-500 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 mt-20">
       <h1 className="text-4xl font-extrabold mb-12 text-center tracking-tight">
         All Blogs
       </h1>
