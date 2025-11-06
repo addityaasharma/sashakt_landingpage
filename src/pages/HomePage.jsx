@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { BookOpen, Users, Star } from "lucide-react";
-import BlogPage from "./BlogPage";
-import AdsterraAd from "../components/AdsterraAd";
-import AdsterraSocialBar from "../components/AdsterraSocialBar";
+import React, { useState, useEffect } from "react";
+import { BookOpen, Users, Star, X, ShoppingCart, ExternalLink } from "lucide-react";
 
 const PrimaryButton = ({ children, ...props }) => (
   <button
@@ -13,32 +10,219 @@ const PrimaryButton = ({ children, ...props }) => (
   </button>
 );
 
+// Product Popup Component
+const ProductPopup = ({ isOpen, onClose, product }) => {
+  if (!isOpen || !product) return null;
+
+  const handleBuyNow = () => {
+    window.open(product.shopifyUrl, '_blank');
+  };
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 animate-fadeIn">
+      <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
+        >
+          <X size={24} className="text-gray-600" />
+        </button>
+
+        <div className="grid md:grid-cols-2 gap-8 p-8">
+          <div className="relative">
+            <div className="aspect-square rounded-xl overflow-hidden bg-gray-100 shadow-lg">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div className="absolute top-4 left-4 bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Featured Product
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                {product.name}
+              </h2>
+
+              <div className="text-4xl font-bold text-purple-600 mb-6">
+                {product.price}
+              </div>
+
+              <div className="prose prose-lg">
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {product.description}
+                </p>
+              </div>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span>In Stock</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span>Free Shipping</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-700">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <span>30-Day Returns</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <button
+                onClick={handleBuyNow}
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <ShoppingCart size={20} />
+                Buy Now
+                <ExternalLink size={16} />
+              </button>
+
+              <button
+                onClick={onClose}
+                className="w-full bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
+              >
+                Continue Shopping
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+
+        .animate-slideUp {
+          animation: slideUp 0.4s ease-out;
+        }
+      `}</style>
+    </div>
+  );
+};
+
 const HomePage = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [showProductPopup, setShowProductPopup] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState(null);
+  const [disablePopup, setDisablePopup] = useState(false);
+
+  const products = [
+    {
+      id: 1,
+      name: "Premium Wireless Headphones",
+      price: "$299.99",
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+      description: "Experience crystal-clear audio with our premium wireless headphones. Features active noise cancellation, 30-hour battery life, and premium comfort padding.",
+      shopifyUrl: "https://your-store.myshopify.com/products/wireless-headphones"
+    },
+    {
+      id: 2,
+      name: "Smart Watch Pro",
+      price: "$399.99",
+      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
+      description: "Stay connected and track your fitness goals with our advanced smartwatch. Water-resistant design with heart rate monitoring and GPS tracking.",
+      shopifyUrl: "https://your-store.myshopify.com/products/smart-watch-pro"
+    },
+    {
+      id: 3,
+      name: "Minimalist Backpack",
+      price: "$89.99",
+      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+      description: "Sleek and functional backpack perfect for everyday use. Features multiple compartments, laptop sleeve, and water-resistant material.",
+      shopifyUrl: "https://your-store.myshopify.com/products/minimalist-backpack"
+    },
+    {
+      id: 4,
+      name: "Organic Cotton T-Shirt",
+      price: "$34.99",
+      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+      description: "Sustainable and comfortable organic cotton t-shirt. Soft fabric with a perfect fit, available in multiple colors.",
+      shopifyUrl: "https://your-store.myshopify.com/products/organic-tshirt"
+    },
+    {
+      id: 5,
+      name: "Stainless Steel Water Bottle",
+      price: "$29.99",
+      image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
+      description: "Keep your drinks cold for 24 hours or hot for 12 hours. Double-wall vacuum insulation with leak-proof cap.",
+      shopifyUrl: "https://your-store.myshopify.com/products/water-bottle"
+    }
+  ];
+
+  useEffect(() => {
+    if (disablePopup) return;
+
+    const interval = setInterval(() => {
+      const randomProduct = products[Math.floor(Math.random() * products.length)];
+      setCurrentProduct(randomProduct);
+      setShowProductPopup(true);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [disablePopup]);
+
+  const closeProductPopup = () => {
+    setShowProductPopup(false);
+  };
+
+  const disableProductPopup = () => {
+    setDisablePopup(true);
+    setShowProductPopup(false);
+  };
+
   return (
     <div
-      className={`${
-        darkMode ? "bg-gray-900 text-gray-200" : "bg-blue-50 text-gray-900"
-      } min-h-screen transition-colors duration-500`}
+      className={`${darkMode ? "bg-gray-900 text-gray-200" : "bg-blue-50 text-gray-900"
+        } min-h-screen transition-colors duration-500`}
     >
-      {/* Toggle button */}
-      <div className="fixed top-4 right-4 z-50">
+      <ProductPopup
+        isOpen={showProductPopup}
+        onClose={closeProductPopup}
+        product={currentProduct}
+      />
+
+      {/* <div className="fixed top-4 right-4 z-50">
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-pink-500 text-white rounded-lg shadow-lg hover:scale-110 transform transition"
-          aria-label="Toggle Dark Mode"
         >
           Toggle {darkMode ? "Light" : "Dark"}
         </button>
-      </div>
+      </div> */}
 
-      {/* Hero Section */}
       <section
-        className={`min-h-[75vh] flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-20 lg:px-40 py-20 ${
-          darkMode
-            ? "bg-gradient-to-br from-gray-800 via-gray-900 to-black"
-            : "bg-gradient-to-br from-blue-200 via-white to-blue-100"
-        }`}
+        className={`min-h-[75vh] flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-20 lg:px-40 py-20 ${darkMode
+          ? "bg-gradient-to-br from-gray-800 via-gray-900 to-black"
+          : "bg-gradient-to-br from-blue-200 via-white to-blue-100"
+          }`}
       >
         <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0 z-10">
           <p className="uppercase font-semibold tracking-widest text-indigo-400 mb-3">
@@ -68,7 +252,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Key Points */}
       <section className="max-w-7xl mx-auto -mt-16 rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row text-gray-800 dark:text-gray-200 px-4 sm:px-6 md:px-0">
         <div className="w-full md:w-1/3 p-6 md:p-10 bg-gradient-to-br from-indigo-600 to-pink-500 text-white rounded-l-xl relative">
           <div className="absolute inset-0 bg-black bg-opacity-30 rounded-l-xl pointer-events-none"></div>
@@ -124,28 +307,12 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Ad Section */}
-      <div className="my-12 max-w-7xl mx-auto px-4 sm:px-6 md:px-20">
-        <AdsterraAd />
-      </div>
-
-      {/* Blog Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 mt-50">
-        <BlogPage darkMode={darkMode} />
-      </div>
-
-      {/* Social Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 my-8">
-        <AdsterraSocialBar />
-      </div>
-
-      {/* About Section */}
       <section className="max-w-7xl mx-auto my-20 px-4 sm:px-6 md:px-20 flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-indigo-50 dark:bg-gray-900 rounded-xl shadow-lg text-gray-900 dark:text-gray-100 p-8 sm:p-12">
         <div className="w-full md:w-1/2">
           <img
             src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg"
             alt="About us"
-            className="rounded-3xl shadow-xl border-4 sm:border-8 border-indigo-200 dark:border-indigo-700 mix-blend-darken dark:mix-blend-lighten"
+            className="rounded-3xl shadow-xl border-4 sm:border-8 border-indigo-200 dark:border-indigo-700"
           />
         </div>
         <div className="w-full md:w-1/2">
@@ -164,67 +331,12 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="max-w-7xl mx-auto my-20 px-4 sm:px-6 md:px-20 bg-indigo-100 dark:bg-gray-900 rounded-xl shadow-xl p-8 sm:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-10">
-        <div className="w-full md:w-1/2">
-          <img
-            src="https://images.pexels.com/photos/9429335/pexels-photo-9429335.jpeg"
-            alt="Contact Us"
-            className="rounded-3xl shadow-lg border-4 sm:border-8 border-indigo-300 dark:border-indigo-800"
-          />
-        </div>
-        <div className="w-full md:w-1/2 bg-white/90 dark:bg-gray-800/90 rounded-xl p-6 sm:p-10 shadow-inner">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-indigo-700 dark:text-amber-400">
-            Get in Touch
-          </h2>
-          <form className="space-y-6 sm:space-y-8">
-            <div>
-              <label
-                htmlFor="full-name"
-                className="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
-              >
-                Full Name
-              </label>
-              <input
-                id="full-name"
-                type="text"
-                placeholder="Enter your name"
-                className="w-full border-b-2 border-indigo-300 focus:border-indigo-600 dark:border-amber-400 dark:focus:border-amber-500 bg-transparent px-3 py-2 text-base sm:text-lg outline-none transition rounded"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-                className="w-full border-b-2 border-indigo-300 focus:border-indigo-600 dark:border-amber-400 dark:focus:border-amber-500 bg-transparent px-3 py-2 text-base sm:text-lg outline-none transition rounded"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block mb-2 font-semibold text-gray-700 dark:text-gray-300"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows="5"
-                placeholder="Write your message..."
-                className="w-full border-b-2 border-indigo-300 focus:border-indigo-600 dark:border-amber-400 dark:focus:border-amber-500 bg-transparent px-3 py-2 text-base sm:text-lg outline-none transition rounded resize-none"
-              />
-            </div>
-            <PrimaryButton type="submit" className="w-full">
-              Send Message
-            </PrimaryButton>
-          </form>
-        </div>
+      <section className="max-w-7xl mx-auto my-20 px-4 sm:px-6 md:px-20 text-center">
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 text-indigo-700 dark:text-amber-400">
+          Get in Touch
+        </h2>
+        <p className="text-lg mb-6">Contact us for more information about our services and offerings.</p>
+        <PrimaryButton>Contact Us</PrimaryButton>
       </section>
     </div>
   );

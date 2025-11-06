@@ -44,7 +44,6 @@ const Header = () => {
   const [mobileCategories, setMobileCategories] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
 
-  // Track scroll direction to hide/show header
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
 
@@ -52,10 +51,8 @@ const Header = () => {
       const currentScrollY = window.pageYOffset;
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scroll down - hide header
         setHideHeader(true);
       } else {
-        // Scroll up - show header
         setHideHeader(false);
       }
 
@@ -76,7 +73,6 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between ">
-        {/* Logo */}
         <Link
           to="/"
           className="text-2xl font-extrabold text-blue-700 hover:opacity-80 transition cursor-pointer"
@@ -84,7 +80,6 @@ const Header = () => {
           Googly<span className="text-amber-400">.</span>com
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 font-semibold text-gray-800">
           <NavLink
             to="/"
@@ -108,7 +103,6 @@ const Header = () => {
             About
           </NavLink>
 
-          {/* Categories Dropdown */}
           <div className="relative group">
             <button
               onClick={() => setShowCategories(!showCategories)}
@@ -146,6 +140,17 @@ const Header = () => {
             }
           >
             Blog
+          </NavLink>
+
+          <NavLink
+            to="/product"
+            className={({ isActive }) =>
+              `relative px-2 py-1 hover:text-amber-400 transition ${
+                isActive ? "text-amber-400 font-bold" : ""
+              }`
+            }
+          >
+            Products
           </NavLink>
           <NavLink
             to="/contact"

@@ -8,6 +8,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetail from "./pages/BlogDetail";
 import ContactUs from "./pages/ContactUs";
 import { pageView } from "./blogs/FacebookPixel";
+import LinkPage from "./components/LinkPage";
 
 const TrackPageViews = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/product" element={<LinkPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:category" element={<BlogDetail />} />
           <Route path="/contact" element={<ContactUs />} />
