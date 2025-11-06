@@ -15,7 +15,7 @@ const BlogDetail = () => {
         );
 
     return (
-        <div className="max-w-4xl mx-auto px-6 py-12">
+        <div className="max-w-4xl mx-auto my-10 px-6 py-12">
             {/* Blog Title */}
             <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
             <p className="text-gray-600 mb-8">
