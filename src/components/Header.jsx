@@ -30,8 +30,8 @@ const categories = [
   "Art",
   "Photography",
   "Programming",
-  "AI ML",
-  "Web Development",
+  "AIML",
+  "WebDevelopment",
   "Startups",
   "Crypto",
   "Environment",
@@ -68,9 +68,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white shadow-sm ${
-        hideHeader ? "-translate-y-full" : "translate-y-0"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white shadow-sm ${hideHeader ? "-translate-y-full" : "translate-y-0"
+        }`}
     >
       <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between ">
         <Link
@@ -84,8 +83,7 @@ const Header = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `relative px-2 py-1 hover:text-amber-400 transition ${
-                isActive ? "text-amber-400 font-bold" : ""
+              `relative px-2 py-1 hover:text-amber-400 transition ${isActive ? "text-amber-400 font-bold" : ""
               }`
             }
             end
@@ -95,8 +93,7 @@ const Header = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `relative px-2 py-1 hover:text-amber-400 transition ${
-                isActive ? "text-amber-400 font-bold" : ""
+              `relative px-2 py-1 hover:text-amber-400 transition ${isActive ? "text-amber-400 font-bold" : ""
               }`
             }
           >
@@ -113,9 +110,8 @@ const Header = () => {
               Categories <ChevronDown size={18} />
             </button>
             <div
-              className={`absolute top-full left-0 mt-2 w-48 max-h-64 bg-white rounded-md shadow-lg overflow-y-auto transition-opacity duration-200 ${
-                showCategories ? "opacity-100 visible" : "opacity-0 invisible"
-              }`}
+              className={`absolute top-full left-0 mt-2 w-48 max-h-64 bg-white rounded-md shadow-lg overflow-y-auto transition-opacity duration-200 ${showCategories ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
               onMouseLeave={() => setShowCategories(false)}
             >
               {categories.map((cat, i) => (
@@ -134,8 +130,7 @@ const Header = () => {
           <NavLink
             to="/blog"
             className={({ isActive }) =>
-              `relative px-2 py-1 hover:text-amber-400 transition ${
-                isActive ? "text-amber-400 font-bold" : ""
+              `relative px-2 py-1 hover:text-amber-400 transition ${isActive ? "text-amber-400 font-bold" : ""
               }`
             }
           >
@@ -143,20 +138,9 @@ const Header = () => {
           </NavLink>
 
           <NavLink
-            to="/product"
-            className={({ isActive }) =>
-              `relative px-2 py-1 hover:text-amber-400 transition ${
-                isActive ? "text-amber-400 font-bold" : ""
-              }`
-            }
-          >
-            Products
-          </NavLink>
-          <NavLink
             to="/contact"
             className={({ isActive }) =>
-              `relative px-2 py-1 hover:text-amber-400 transition ${
-                isActive ? "text-amber-400 font-bold" : ""
+              `relative px-2 py-1 hover:text-amber-400 transition ${isActive ? "text-amber-400 font-bold" : ""
               }`
             }
           >
@@ -202,9 +186,8 @@ const Header = () => {
               >
                 Categories{" "}
                 <ChevronDown
-                  className={`${
-                    mobileCategories ? "rotate-180" : "rotate-0"
-                  } transition-transform`}
+                  className={`${mobileCategories ? "rotate-180" : "rotate-0"
+                    } transition-transform`}
                 />
               </button>
               {mobileCategories && (

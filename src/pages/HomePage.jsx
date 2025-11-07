@@ -9,8 +9,10 @@ import {
 } from "lucide-react";
 import ProductPage1 from "../components/ProductPage1";
 import BlogPage from "./BlogPage";
+import HeroSection from "../components/HeroSection";
+import ShoppingSection from "../components/ShoppingSection";
+import BlogCarousel from "../components/BlogCarousel";
 
-// ---------- Reusable Button ----------
 const Button = ({ children, onClick, className = "" }) => (
   <button
     onClick={onClick}
@@ -20,7 +22,6 @@ const Button = ({ children, onClick, className = "" }) => (
   </button>
 );
 
-// ---------- Product Popup ----------
 const ProductPopup = ({ product, onClose }) => {
   if (!product) return null;
   return (
@@ -85,7 +86,6 @@ const ProductPopup = ({ product, onClose }) => {
   );
 };
 
-// ---------- MAIN HOMEPAGE ----------
 const HomePage = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -109,111 +109,179 @@ const HomePage = () => {
 
   return (
     <div className="bg-white text-gray-900 min-h-screen overflow-x-hidden my-10">
-      {/* ---------- HERO SECTION ---------- */}
-      <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-24 bg-gradient-to-r from-indigo-50 via-white to-indigo-100 rounded-b-3xl">
-        <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6">
-            Learn. Grow. Create. 🚀
-          </h1>
-          <p className="text-gray-600 mb-8 text-lg max-w-md mx-auto md:mx-0">
-            Welcome to <strong>Googly</strong> — a space where innovation meets
-            learning. Discover tools, products, and stories that move the world
-            forward.
-          </p>
-          <Button>
-            Get Started <ArrowRight className="inline-block ml-2 w-5 h-5" />
-          </Button>
-        </div>
-        <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
-            alt="Creative Learning"
-            className="rounded-3xl shadow-2xl w-full max-w-lg object-cover"
-          />
-        </div>
-      </section>
-
-      {/* ---------- PRODUCT PAGE ---------- */}
-      <section className="px-6 md:px-12 py-20">
-        <ProductPage1 setSelectedProduct={setSelectedProduct} />
-      </section>
-
-      {/* ---------- FEATURES ---------- */}
-      <section className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 md:px-12 py-16">
-        {features.map((f, i) => (
-          <div
-            key={i}
-            className="border border-gray-200 rounded-2xl p-8 text-center hover:shadow-md transition transform hover:-translate-y-1"
-          >
-            <div className="flex justify-center mb-4">{f.icon}</div>
-            <h3 className="font-semibold text-xl mb-2">{f.title}</h3>
-            <p className="text-gray-600 text-sm">{f.text}</p>
-          </div>
-        ))}
-      </section>
-
-      {/* ---------- BLOG SECTION ---------- */}
-      <div className="bg-gray-50 py-20">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">From Our Blog</h2>
-          <p className="text-gray-600">
-            Stay inspired with the latest stories and insights.
-          </p>
-        </div>
-        <BlogPage />
-      </div>
-
-      {/* ---------- TESTIMONIALS ---------- */}
-      <section className="max-w-6xl mx-auto py-20 px-6 md:px-12 text-center">
-        <h2 className="text-3xl font-bold mb-8">What Our Users Say 💬</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Ananya Patel",
-              quote:
-                "Googly transformed how I learn — it’s visual, fast, and inspiring.",
-            },
-            {
-              name: "Rahul Mehta",
-              quote:
-                "A truly refreshing experience — minimal yet powerful content delivery.",
-            },
-            {
-              name: "Sofia Khan",
-              quote:
-                "I found my creative rhythm again thanks to Googly’s amazing content!",
-            },
-          ].map((t, i) => (
-            <div
-              key={i}
-              className="p-6 bg-white rounded-2xl shadow-sm border border-gray-200"
-            >
-              <p className="text-gray-700 italic mb-4">“{t.quote}”</p>
-              <h4 className="font-semibold text-indigo-600">{t.name}</h4>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ---------- SUBSCRIBE SECTION ---------- */}
-      <section className="bg-indigo-600 text-white text-center py-16 px-6 md:px-12 rounded-t-3xl">
-        <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
-        <p className="mb-6 text-indigo-100">
-          Subscribe for the latest updates, ideas, and curated learning content.
+      <HeroSection />
+      <section className="max-w-3xl mx-auto text-center mt-28 px-6">
+        <h2 className="text-5xl font-semibold mb-8 tracking-tight text-gray-900">
+          Why You’ll Love Shopping With Us
+        </h2>
+        <p className="text-gray-500 text-lg leading-relaxed">
+          Discover products that bring beauty, purpose, and craftsmanship into your life.
+          Every piece is handpicked to inspire mindful living — where quality meets simplicity.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="p-3 rounded-xl text-gray-800 w-full"
-          />
-          <Button className="bg-amber-400 text-black hover:bg-amber-500">
-            Subscribe
-          </Button>
+      </section>
+
+
+      <ShoppingSection />
+
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/7805671/pexels-photo-7805671.jpeg"
+              alt="About Us"
+              className="rounded-3xl shadow-lg object-cover w-full h-[450px]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent rounded-3xl"></div>
+          </div>
+
+          <div className="text-center md:text-left">
+            <h2 className="text-4xl font-semibold mb-6 tracking-tight text-gray-900">
+              About <span className="text-indigo-600">Googlyy</span>
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              Googlyy isn’t just a shopping destination — it’s a movement to empower
+              creativity, sustainability, and community. Every product we feature is
+              thoughtfully selected, supporting small creators, local artisans, and
+              eco-conscious innovation.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              Our mission is simple — to make quality, design, and purpose accessible
+              to everyone. Whether it’s a plant combo for your home or a handmade
+              accessory, we aim to inspire mindful living through every purchase.
+            </p>
+
+            <button className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition shadow-md">
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
 
-      {/* ---------- PRODUCT POPUP ---------- */}
+      <BlogCarousel />
+
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-semibold mb-6 text-gray-900">
+            What Our Customers Say
+          </h2>
+          <p className="text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
+            Real stories from happy customers who love shopping with{" "}
+            <span className="font-semibold text-indigo-600">Sashakt</span>.
+          </p>
+
+          <div className="flex overflow-x-auto gap-6 pb-6 scrollbar-none snap-x snap-mandatory">
+            {[
+              {
+                name: "Ananya Patel",
+                role: "Home Decor Enthusiast",
+                text: "Absolutely loved the quality of the seed and plant combo I ordered. The packaging was eco-friendly and thoughtful!",
+                img: "https://randomuser.me/api/portraits/women/79.jpg",
+              },
+              {
+                name: "Rohit Sharma",
+                role: "Tech Professional",
+                text: "I ordered some lifestyle items — all products were exactly as shown and delivery was super fast.",
+                img: "https://randomuser.me/api/portraits/men/65.jpg",
+              },
+              {
+                name: "Neha Verma",
+                role: "Creative Artist",
+                text: "The jewelry and accessories collection is just stunning. It feels premium yet affordable!",
+                img: "https://randomuser.me/api/portraits/women/68.jpg",
+              },
+              {
+                name: "Aman Mehra",
+                role: "Plant Lover",
+                text: "Sashakt is my go-to for unique finds and eco-conscious products. The curation is simply beautiful!",
+                img: "https://randomuser.me/api/portraits/men/74.jpg",
+              },
+            ].map((testimonial, i) => (
+              <div
+                key={i}
+                className="flex-none w-80 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-6 snap-start"
+              >
+                <div className="flex items-center mb-4">
+                  <img
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className="w-14 h-14 rounded-full object-cover mr-4"
+                  />
+                  <div className="text-left">
+                    <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  “{testimonial.text}”
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Hide scrollbar */}
+        <style jsx="true">{`
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  `}</style>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white px-6 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-semibold text-center mb-6 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Everything you need to know before you shop with{" "}
+            <span className="font-semibold text-indigo-600">Sashakt</span>.
+          </p>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "How long does delivery take?",
+                a: "Most orders are delivered within 4–7 business days depending on your location. You’ll receive tracking updates once your order ships.",
+              },
+              {
+                q: "Do you offer returns or exchanges?",
+                a: "Yes, we offer easy 7-day returns for most products. Items must be unused and in original packaging.",
+              },
+              {
+                q: "Are your products eco-friendly?",
+                a: "Absolutely! We focus on sustainability by curating eco-conscious, handmade, and locally sourced products.",
+              },
+              {
+                q: "Can I join your WhatsApp shopping groups?",
+                a: "Yes! Each category in our shopping section includes a direct link to join relevant WhatsApp groups.",
+              },
+              {
+                q: "Do you ship internationally?",
+                a: "Currently, we ship only within India, but we’re expanding soon!",
+              },
+            ].map((faq, i) => (
+              <details
+                key={i}
+                className="group border border-gray-200 rounded-2xl p-6 hover:shadow-sm transition"
+              >
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-medium text-gray-900">
+                  {faq.q}
+                  <span className="text-indigo-600 transition-transform group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p className="text-gray-600 mt-3 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ProductPopup
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}

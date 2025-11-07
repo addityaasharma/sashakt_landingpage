@@ -60,7 +60,6 @@ const ProductPage1 = () => {
         },
     ];
 
-    // open random product
     const openPopup = () => {
         const randomProduct = products[Math.floor(Math.random() * products.length)];
         setCurrentProduct(randomProduct);
@@ -75,14 +74,13 @@ const ProductPage1 = () => {
         }
     };
 
-    // Auto open every 10s (only once per session)
     useEffect(() => {
         const hasShown = localStorage.getItem("promoShown");
         if (!hasShown) {
             const timer = setTimeout(() => {
                 openPopup();
                 localStorage.setItem("promoShown", "true");
-            }, 10000);
+            }, 5000);
             return () => clearTimeout(timer);
         }
     }, []);

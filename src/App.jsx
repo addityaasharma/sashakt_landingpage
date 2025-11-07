@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
-import CategoryPage from "./pages/CategoryPage";
 import About from "./pages/About";
 import BlogPage from "./pages/BlogPage";
 import BlogDetail from "./pages/BlogDetail";
 import ContactUs from "./pages/ContactUs";
 import { pageView } from "./blogs/FacebookPixel";
 import LinkPage from "./components/LinkPage";
+import Category from "./pages/Category";
 
 const TrackPageViews = () => {
   const location = useLocation();
@@ -27,11 +27,12 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/category/:slug" element={<CategoryPage />} />
+          <Route path="/category/:categorySlug" element={<Category />} />
+          <Route path="/blog/:category/:blogIndex" element={<BlogDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/product" element={<LinkPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:category" element={<BlogDetail />} />
+          <Route path="/blog/:category/:blogIndex" element={<BlogDetail />} />
           <Route path="/contact" element={<ContactUs />} />
         </Route>
       </Routes>
