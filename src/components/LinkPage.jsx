@@ -3,6 +3,7 @@ import { TrendingProducts } from "./TrendingProducts";
 import { FaWhatsapp } from "react-icons/fa";
 import { X } from "lucide-react";
 import { JoinAndWin, LimitedTimeBanner } from "./Feature";
+import { useNavigate } from "react-router-dom";
 const SHOP_URL = "https://clickship.in";
 const PROMO_DELAY_MS = 5000;
 
@@ -86,6 +87,8 @@ export default function MarketingLanding() {
     const [showPromo, setShowPromo] = useState(false);
     const [promoGroup, setPromoGroup] = useState(null);
     const [hasAutoShown, setHasAutoShown] = useState(false);
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         const hot = whatsappLinks.find((g) => g.name === "Hot Picks") || whatsappLinks[0];
@@ -213,7 +216,7 @@ export default function MarketingLanding() {
                 </div>
             </header>
 
-            <TrendingProducts/>
+            <TrendingProducts />
 
             <main className="max-w-7xl mx-auto px-6 pb-16">
                 <section className="mt-6">
@@ -226,7 +229,8 @@ export default function MarketingLanding() {
                         {whatsappLinks.map((item, i) => (
                             <article
                                 key={i}
-                                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow transform hover:-translate-y-1"
+                                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow transform hover:-translate-y-1 cursor-pointer"
+                                onClick={() => navigate(`/group/${i}`)}
                             >
                                 <div className="relative">
                                     <img src={item.image} alt={item.name} className="w-full h-44 object-cover" />
@@ -238,28 +242,11 @@ export default function MarketingLanding() {
                                 <div className="p-4 flex flex-col gap-3">
                                     <h3 className="font-semibold text-gray-800">{item.name}</h3>
                                     <p className="text-xs text-gray-500">Active community · daily posts · exclusive offers</p>
-
-                                    <div className="mt-2 flex gap-2">
-                                        <button
-                                            onClick={() => openGroup(item.link, item.name)}
-                                            className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm hover:bg-green-700 transition-colors"
-                                        >
-                                            <FaWhatsapp /> Join
-                                        </button>
-
-                                        <button
-                                            onClick={() => {
-                                                openGroup(item.link, item.name);
-                                            }}
-                                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border text-sm hover:bg-gray-50 transition-colors"
-                                        >
-                                            Open
-                                        </button>
-                                    </div>
                                 </div>
                             </article>
                         ))}
                     </div>
+
                 </section>
 
                 <section className="mt-12 grid md:grid-cols-2 gap-8">
@@ -300,8 +287,8 @@ export default function MarketingLanding() {
                     </div>
                 </section>
             </main>
-            <LimitedTimeBanner/>
-            <JoinAndWin/>
+            <LimitedTimeBanner />
+            <JoinAndWin />
 
 
             <footer className="bg-white border-t">

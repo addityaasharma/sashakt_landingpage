@@ -25,7 +25,9 @@ export const LimitedTimeBanner = () => {
     window.open("https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66", "_blank", "noopener,noreferrer");
 
   return (
-    <div className="fixed top-16 left-1/2 transform -translate-x-1/2 z-50 bg-yellow-100 border border-yellow-300 px-6 py-3 rounded-full shadow-lg flex items-center gap-4 animate-bounce">
+    <div className="hidden sm:flex fixed top-16 left-1/2 transform -translate-x-1/2 z-50 
+                bg-yellow-100 border border-yellow-300 px-6 py-3 rounded-full shadow-lg 
+                items-center gap-4 animate-bounce">
       <span className="text-xl">⚡</span>
       <div className="text-sm font-medium">
         Limited Time: Get 20% off your first order – Join “Hot Picks” now!
@@ -37,5 +39,6 @@ export const LimitedTimeBanner = () => {
         Join Hot Picks
       </button>
     </div>
+
   );
 };

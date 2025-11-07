@@ -3689,3 +3689,235 @@ const blogs = {
 };
 
 export default blogs;
+
+
+
+// whatsappLinks.js
+// whatsappLinks.js
+export const whatsappLinks = [
+    {
+        name: "Founder Support",
+        link: "https://chat.whatsapp.com/K81Jyw1IuEhKVPADnD5IYc",
+        image: "https://images.unsplash.com/photo-1532619187608-e5375cab36aa?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Founder Support Group
+
+Connect directly with founders and get insider guidance on products and services.  
+
+### What You'll Get:
+- 🔥 **Exclusive Deals**: Get access to early-bird offers before they go public.  
+- ⚡ **Quick Support**: Resolve your queries instantly — no long wait times.  
+- 🛠️ **Insider Tips**: Learn best practices, product hacks, and industry insights.  
+
+### Why Join?
+Being part of this group ensures you are **always one step ahead**. Founders often drop exclusive discounts, limited edition products, and valuable advice only for members.  
+
+**Don't miss the chance to connect, learn, and shop smarter!**
+`
+    },
+    {
+        name: "Seed and Plant Combo",
+        link: "https://chat.whatsapp.com/ESJR0zhmxSy9AN6eu6Ao2q",
+        image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Seed & Plant Combo Group
+
+Grow your dream garden while saving money! This group is perfect for plant lovers and home gardeners.  
+
+### Benefits of Joining:
+- 🌱 **Exclusive Combos**: Special seed & plant bundles curated weekly.  
+- 🌸 **Gardening Tips**: Learn from experts & community members.  
+- 🛒 **Limited-Time Deals**: Only group members get these discounts.  
+
+### Why It Works:
+Plants are limited and seasonal, so joining this group ensures you never miss out. Members share experiences, care tips, and product recommendations.  
+
+**Join now and make your home a green paradise!**
+`
+    },
+    {
+        name: "Accessories",
+        link: "https://chat.whatsapp.com/CXAluNGTHmj9YqqZdAppZO",
+        image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Accessories Deals Group
+
+Discover trending fashion, tech, and lifestyle accessories at unbeatable prices.  
+
+### What’s Inside:
+- 💍 **Exclusive Product Drops**: Get notified about the latest must-have items.  
+- 🏷️ **Member-Only Discounts**: Save 20–50% on top-rated accessories.  
+- 🔥 **Limited Stock Alerts**: Never miss out on bestsellers.  
+
+### Why Join?
+Our community helps members **shop smarter and faster**. Learn styling tips, product reviews, and insider tricks to find hidden deals.  
+
+**Upgrade your style and shop like a pro — join now!**
+`
+    },
+    {
+        name: "Something Unique",
+        link: "https://chat.whatsapp.com/Byuf0c3O4DsIpByKpRxpdw",
+        image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Unique Finds Group
+
+Find quirky, unusual, and exclusive products that stand out.  
+
+### Benefits:
+- 🎁 **Curated Unique Products**: Handpicked for style and originality.  
+- 🛍️ **Exclusive Deals**: Discounts only for group members.  
+- 🌟 **Trending Insights**: Stay ahead of the curve on niche products.  
+
+### Why You Should Join:
+This is perfect for those who love **special, one-of-a-kind items**. Members share unboxing experiences, reviews, and shopping tips.  
+
+**Join now to explore and purchase rare finds before they sell out!**
+`
+    },
+    {
+        name: "Kitchen",
+        link: "https://chat.whatsapp.com/Hxhv2WXAjkTEet3hbulzcq",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Kitchen Deals Group
+
+Upgrade your cooking space with high-quality products at amazing prices.  
+
+### What You’ll Get:
+- 🍳 **Daily Kitchen Deals**: Cookware, appliances, and utensils at discounted rates.  
+- 🥘 **Expert Tips**: Learn time-saving hacks and recipes.  
+- 🛒 **Limited Stock Alerts**: Get notified before popular items sell out.  
+
+### Why Join:
+Whether you’re a casual cook or a kitchen pro, this group ensures you **save money, get quality products, and enhance your cooking experience**.  
+
+**Join now and revolutionize your kitchen today!**
+`
+    },
+    {
+        name: "Kids Toy",
+        link: "https://chat.whatsapp.com/HwKqz8QPu0Y2j6doTDlEaE",
+        image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Kids Toy Deals Group
+
+Discover the best toys that kids will absolutely love — without breaking the bank.  
+
+### Benefits:
+- 🧸 **Exclusive Discounts**: Toys for all age groups at lower prices.  
+- 🎉 **Limited-Time Offers**: Only group members get early access.  
+- 🌟 **Expert Recommendations**: Tips from parents and toy enthusiasts.  
+
+### Why Join:
+Perfect for parents who want **fun, educational, and safe toys** at affordable prices.  
+
+**Join now and make your child’s playtime magical!**
+`
+    },
+    {
+        name: "Hot Picks",
+        link: "https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Hot Picks Group
+
+The **hottest deals curated daily** by our community.  
+
+### Why Join:
+- 🔥 **Daily Top Deals**: Get instant alerts for trending products.  
+- 🛒 **Member-Only Discounts**: Up to 50% off selected products.  
+- ⚡ **Never Miss Out**: Limited stock items delivered fast.  
+
+### What Members Say:
+“Hot Picks helped me save hundreds every month!” — Ria, Mumbai  
+
+**Join now and grab the best deals before they sell out!**
+`
+    },
+    {
+        name: "Gardening and Plants",
+        link: "https://chat.whatsapp.com/KqjbVusGLvgBMbd9zZ2zGz",
+        image: "https://images.unsplash.com/photo-1524594227085-4e4c1bcd0a22?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Gardening & Plants Group
+
+For plant lovers and gardening enthusiasts — deals, tips, and expert advice.  
+
+### What You’ll Get:
+- 🌿 **Exclusive Plant Deals**: Seasonal plants and supplies at discounts.  
+- 🌸 **Expert Advice**: How to care, propagate, and grow your plants.  
+- 🛒 **Early Access**: Limited-stock items for members.  
+
+**Join now and grow your garden while saving money!**
+`
+    },
+    {
+        name: "Fashion and Lifestyle",
+        link: "https://chat.whatsapp.com/I9yINQEEY0wD77RInGcRPH",
+        image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Fashion & Lifestyle Deals Group
+
+Stay trendy and save on fashion, accessories, and lifestyle products.  
+
+### Benefits:
+- 👗 **Exclusive Discounts**: Clothes, accessories, and lifestyle products at low prices.  
+- 🛍️ **Member-Only Offers**: Daily updates on trending products.  
+- 🌟 **Style Tips & Reviews**: Advice from experts and community members.  
+
+**Join now to look stylish while saving big!**
+`
+    },
+    {
+        name: "Christmas Magic Collection",
+        link: "https://chat.whatsapp.com/IuxZtSZxpXrEr7fgTDTQXA",
+        image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Christmas Magic Collection Group
+
+Prepare for a magical Christmas with exclusive deals on festive products.  
+
+### Benefits:
+- 🎄 **Exclusive Festive Products**: Decorations, gifts, and more.  
+- 🛒 **Special Discounts**: Member-only holiday deals.  
+- 🎁 **Early Access**: Limited edition products before they sell out.  
+
+**Join now and make your Christmas unforgettable!**
+`
+    },
+    {
+        name: "Beauty and Personal Health Care",
+        link: "https://chat.whatsapp.com/EXhW4sBTN8SKof54SewN2p",
+        image: "https://images.unsplash.com/photo-1588514727390-91fd5ebaef1e?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Beauty & Health Deals Group
+
+Get exclusive deals on skincare, health, and personal care products.  
+
+### What You’ll Get:
+- 💄 **Top Brand Discounts**: Skincare, makeup, and wellness products at low prices.  
+- 🛍️ **Daily Offers**: Member-only deals and limited stock alerts.  
+- 🌟 **Tips & Tutorials**: Learn from experts & community recommendations.  
+
+**Join now and stay radiant while saving money!**
+`
+    },
+    {
+        name: "Automobile",
+        link: "https://chat.whatsapp.com/E8h43csFFakIdRQNqAdujc",
+        image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80",
+        content: `
+## Automobile Deals Group
+
+Get the latest deals on car accessories, maintenance, and automotive products.  
+
+### Benefits:
+- 🚗 **Exclusive Discounts**: Auto parts, accessories, and tools at great prices.  
+- 🛠️ **Expert Tips**: Maintenance, upgrades, and cost-saving hacks.  
+- ⚡ **Limited Stock Alerts**: Never miss exclusive automotive offers.  
+
+**Join now to upgrade your ride while saving big!**
+`
+    },
+];
