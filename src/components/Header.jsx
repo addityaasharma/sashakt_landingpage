@@ -1,41 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
+import logo from "../assets/logo.mp4";
 
 const categories = [
-  "Technology",
-  "Health",
-  "Finance",
-  "Travel",
-  "Education",
-  "Sports",
-  "Food",
-  "Fashion",
-  "Lifestyle",
-  "Fitness",
-  "Gaming",
-  "Business",
-  "Marketing",
-  "Real Estate",
-  "Music",
-  "Movies",
-  "Books",
-  "Science",
-  "Politics",
-  "History",
-  "DIY",
-  "Parenting",
-  "Spirituality",
-  "Self Improvement",
-  "Art",
-  "Photography",
-  "Programming",
-  "AIML",
-  "WebDevelopment",
-  "Startups",
-  "Crypto",
-  "Environment",
-  "Automobiles",
+  "Technology", "Health", "Finance", "Travel", "Education", "Sports", "Food", "Fashion",
+  "Lifestyle", "Fitness", "Gaming", "Business", "Marketing", "Real Estate", "Music",
+  "Movies", "Books", "Science", "Politics", "History", "DIY", "Parenting", "Spirituality",
+  "Self Improvement", "Art", "Photography", "Programming", "AIML", "WebDevelopment",
+  "Startups", "Crypto", "Environment", "Automobiles",
 ];
 
 const Header = () => {
@@ -46,50 +20,48 @@ const Header = () => {
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
-
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setHideHeader(true);
-      } else {
-        setHideHeader(false);
-      }
-
+      setHideHeader(currentScrollY > lastScrollY && currentScrollY > 100);
       lastScrollY = currentScrollY;
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white shadow-sm ${hideHeader ? "-translate-y-full" : "translate-y-0"
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-[#d5eafc] shadow-sm ${hideHeader ? "-translate-y-full" : "translate-y-0"
         }`}
     >
-      <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between ">
-        <Link
-          to="/"
-          className="text-2xl font-extrabold text-blue-700 hover:opacity-80 transition cursor-pointer"
-        >
-          Googly<span className="text-amber-400">.</span>com
+      <div className="max-w-7xl mx-auto h-[80px] px-6 md:px-12 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/" className="cursor-pointer flex-shrink-0">
+          <motion.div className="w-[150px] h-[80px] overflow-hidden rounded flex">
+            <video
+              src={logo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover block"
+            />
+          </motion.div>
         </Link>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 font-semibold text-gray-800">
           <NavLink
             to="/"
+            end
             className={({ isActive }) =>
               `relative px-2 py-1 hover:text-amber-400 transition ${isActive ? "text-amber-400 font-bold" : ""
               }`
             }
-            end
           >
             Home
           </NavLink>
+
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -100,6 +72,7 @@ const Header = () => {
             About
           </NavLink>
 
+          {/* Categories Dropdown */}
           <div className="relative group">
             <button
               onClick={() => setShowCategories(!showCategories)}
@@ -160,7 +133,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden bg-white shadow-lg py-6 z-40">
+        <nav className="md:hidden bg-[#d5eafc] shadow-lg py-6 z-40">
           <div className="flex flex-col gap-5 px-6 font-semibold text-gray-800">
             <Link
               to="/"
