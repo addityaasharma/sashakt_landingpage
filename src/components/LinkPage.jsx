@@ -318,8 +318,8 @@ export default function MarketingLanding() {
                     </div>
 
                     <div className="text-sm text-gray-600">
-                        <div>© {new Date().getFullYear()} Your Brand. All rights reserved.</div>
-                        <div className="mt-2">support@yourbrand.example · +91 90000 00000</div>
+                        <div>© {new Date().getFullYear()} Googly. All rights reserved.</div>
+                        <div className="mt-2">support@googlyy.com · +91 95755 84999</div>
                     </div>
                 </div>
             </footer>

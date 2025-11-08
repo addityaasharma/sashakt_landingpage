@@ -10,7 +10,7 @@ const Footer = () => {
                     <div>
                         <h2 className="text-lg font-bold text-white mb-3">Googlyy</h2>
                         <p className="text-sm leading-relaxed">
-                            Googlyy is a creative digital platform based in Raipur, Telibandha, Chhattisgarh, specializing in UI/UX design, website development, and delivering high-quality blogs across multiple categories.
+                            Googlyy is a creative digital platform based in Raipur, Telibandha, Chhattisgarh, specializing in UI/UX design, website development, and delivering high-quality blogs across multiple categories. Designed and Developed by Code Heaven.
                         </p>
                         <p className="mt-4 text-xs text-gray-400">
                             Copyright Googlyy. All rights reserved.
