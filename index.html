@@ -1,121 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Googlyy - Explore Trending Blogs Across All Categories</title>
 
-    <meta
-      name="title"
-      content="Googlyy - Explore Trending Blogs Across All Categories"
-    />
-    <meta
-      name="description"
-      content="Googlyy is your destination for trending, informative, and inspiring blogs across all categories — tech, lifestyle, travel, business, entertainment, and more. Stay updated with the latest stories and insights from around the world."
-    />
-    <meta
-      name="keywords"
-      content="googlyy, googly, google blogs, trending blogs, tech blogs, lifestyle blogs, news, entertainment, travel, food, business, AI, health, Googlyy blog"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="author" content="Googlyy" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Googlyy - Explore Trending Blogs Across All Categories</title>
 
-    <link rel="canonical" href="https://www.googlyy.com/" />
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Googlyy - Explore Trending Blogs Across All Categories" />
+  <meta name="description"
+    content="Googlyy is your destination for trending, informative, and inspiring blogs across all categories — tech, lifestyle, travel, business, entertainment, and more. Stay updated with the latest stories and insights from around the world." />
+  <meta name="keywords"
+    content="googlyy, googly, google blogs, trending blogs, tech blogs, lifestyle blogs, news, entertainment, travel, food, business, AI, health, Googlyy blog" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="author" content="Googlyy" />
+  <link rel="canonical" href="https://www.googlyy.com/" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.googlyy.com/" />
-    <meta
-      property="og:title"
-      content="Googlyy - Explore Trending Blogs Across All Categories"
-    />
-    <meta
-      property="og:description"
-      content="Googlyy brings you diverse and engaging blogs — explore everything from technology and lifestyle to business and travel."
-    />
-    <meta property="og:image" content="https://www.googlyy.com/og-image.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.googlyy.com/" />
+  <meta property="og:title" content="Googlyy - Explore Trending Blogs Across All Categories" />
+  <meta property="og:description"
+    content="Googlyy brings you diverse and engaging blogs — explore everything from technology and lifestyle to business and travel." />
+  <meta property="og:image" content="https://www.googlyy.com/og-image.jpg" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://www.googlyy.com/" />
-    <meta
-      name="twitter:title"
-      content="Googlyy - Explore Trending Blogs Across All Categories"
-    />
-    <meta
-      name="twitter:description"
-      content="Read trending blogs and stories on Googlyy — your hub for tech, lifestyle, travel, and business insights."
-    />
-    <meta name="twitter:image" content="https://www.googlyy.com/og-image.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.googlyy.com/" />
+  <meta name="twitter:title" content="Googlyy - Explore Trending Blogs Across All Categories" />
+  <meta name="twitter:description"
+    content="Read trending blogs and stories on Googlyy — your hub for tech, lifestyle, travel, and business insights." />
+  <meta name="twitter:image" content="https://www.googlyy.com/og-image.jpg" />
 
-    <link rel="icon" type="image/png" href="./favicon-32x32.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" />
 
-    <!-- ✅ Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "1875631583370408");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=1875631583370408&ev=PageView&noscript=1"
-      />
-    </noscript>
-    <!-- ✅ End Meta Pixel Code -->
+  <!-- Google Tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-041ES5JG71"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-041ES5JG71');
+  </script>
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Facebook Pixel -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v;
+      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1875631583370408');
+    fbq('track', 'PageView');
+  </script>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <div id="root"></div>
+  <!-- Browser & Theme Settings -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=3352653878216203&ev=PageView&noscript=1"
-        alt="facebook pixel"
-      />
-    </noscript>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<body>
+  <!-- Facebook Pixel Noscript (must be inside body, not head) -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1875631583370408&ev=PageView&noscript=1" />
+  </noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
