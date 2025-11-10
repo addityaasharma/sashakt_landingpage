@@ -3691,233 +3691,377 @@ const blogs = {
 export default blogs;
 
 
-
-// whatsappLinks.js
-// whatsappLinks.js
 export const whatsappLinks = [
     {
         name: "Founder Support",
         link: "https://chat.whatsapp.com/K81Jyw1IuEhKVPADnD5IYc",
-        image: "https://images.unsplash.com/photo-1532619187608-e5375cab36aa?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1532619187608-e5375cab36aa?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Founder Support Group
 
-Connect directly with founders and get insider guidance on products and services.  
-
-### What You'll Get:
-- 🔥 **Exclusive Deals**: Get access to early-bird offers before they go public.  
-- ⚡ **Quick Support**: Resolve your queries instantly — no long wait times.  
-- 🛠️ **Insider Tips**: Learn best practices, product hacks, and industry insights.  
-
-### Why Join?
-Being part of this group ensures you are **always one step ahead**. Founders often drop exclusive discounts, limited edition products, and valuable advice only for members.  
-
-**Don't miss the chance to connect, learn, and shop smarter!**
-`
+Connect directly with founders and get insider guidance on products and services.
+`,
+        relatedProducts: [
+            {
+                name: "Startup Planner Journal",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/71T0x0dLrUL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Wireless Keyboard & Mouse Combo",
+                price: "₹1,499",
+                image: "https://m.media-amazon.com/images/I/61JY2V9iZvL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Noise Cancelling Headphones",
+                price: "₹2,499",
+                image: "https://m.media-amazon.com/images/I/61CGHv6kmWL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Seed and Plant Combo",
         link: "https://chat.whatsapp.com/ESJR0zhmxSy9AN6eu6Ao2q",
-        image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Seed & Plant Combo Group
 
-Grow your dream garden while saving money! This group is perfect for plant lovers and home gardeners.  
-
-### Benefits of Joining:
-- 🌱 **Exclusive Combos**: Special seed & plant bundles curated weekly.  
-- 🌸 **Gardening Tips**: Learn from experts & community members.  
-- 🛒 **Limited-Time Deals**: Only group members get these discounts.  
-
-### Why It Works:
-Plants are limited and seasonal, so joining this group ensures you never miss out. Members share experiences, care tips, and product recommendations.  
-
-**Join now and make your home a green paradise!**
-`
+Grow your dream garden while saving money!
+`,
+        relatedProducts: [
+            {
+                name: "Organic Seed Combo (10 Varieties)",
+                price: "₹299",
+                image: "https://m.media-amazon.com/images/I/81s7nXj8OHL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Indoor Plant Starter Kit",
+                price: "₹699",
+                image: "https://m.media-amazon.com/images/I/81K5yq-6GoL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Self-Watering Pot Set",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/71R0tfm2kFL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Accessories",
         link: "https://chat.whatsapp.com/CXAluNGTHmj9YqqZdAppZO",
-        image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Accessories Deals Group
 
-Discover trending fashion, tech, and lifestyle accessories at unbeatable prices.  
-
-### What’s Inside:
-- 💍 **Exclusive Product Drops**: Get notified about the latest must-have items.  
-- 🏷️ **Member-Only Discounts**: Save 20–50% on top-rated accessories.  
-- 🔥 **Limited Stock Alerts**: Never miss out on bestsellers.  
-
-### Why Join?
-Our community helps members **shop smarter and faster**. Learn styling tips, product reviews, and insider tricks to find hidden deals.  
-
-**Upgrade your style and shop like a pro — join now!**
-`
+Discover trending fashion, tech, and lifestyle accessories.
+`,
+        relatedProducts: [
+            {
+                name: "Wireless Earbuds",
+                price: "₹1,299",
+                image: "https://m.media-amazon.com/images/I/61CGHv6kmWL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Smartwatch Strap (Leather)",
+                price: "₹399",
+                image: "https://m.media-amazon.com/images/I/71Q2cZcO8OL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Portable Powerbank 10000mAh",
+                price: "₹899",
+                image: "https://m.media-amazon.com/images/I/71w6Y8qwbPL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Something Unique",
         link: "https://chat.whatsapp.com/Byuf0c3O4DsIpByKpRxpdw",
-        image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Unique Finds Group
 
-Find quirky, unusual, and exclusive products that stand out.  
-
-### Benefits:
-- 🎁 **Curated Unique Products**: Handpicked for style and originality.  
-- 🛍️ **Exclusive Deals**: Discounts only for group members.  
-- 🌟 **Trending Insights**: Stay ahead of the curve on niche products.  
-
-### Why You Should Join:
-This is perfect for those who love **special, one-of-a-kind items**. Members share unboxing experiences, reviews, and shopping tips.  
-
-**Join now to explore and purchase rare finds before they sell out!**
-`
+Find quirky, unusual, and exclusive products that stand out.
+`,
+        relatedProducts: [
+            {
+                name: "Floating Magnetic Globe",
+                price: "₹1,899",
+                image: "https://m.media-amazon.com/images/I/61n5sQjppnL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Galaxy Projector Lamp",
+                price: "₹1,499",
+                image: "https://m.media-amazon.com/images/I/71ByNg6i6LL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Mini Zen Garden Desk Decor",
+                price: "₹799",
+                image: "https://m.media-amazon.com/images/I/61X9XXrXENL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Kitchen",
         link: "https://chat.whatsapp.com/Hxhv2WXAjkTEet3hbulzcq",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Kitchen Deals Group
 
-Upgrade your cooking space with high-quality products at amazing prices.  
-
-### What You’ll Get:
-- 🍳 **Daily Kitchen Deals**: Cookware, appliances, and utensils at discounted rates.  
-- 🥘 **Expert Tips**: Learn time-saving hacks and recipes.  
-- 🛒 **Limited Stock Alerts**: Get notified before popular items sell out.  
-
-### Why Join:
-Whether you’re a casual cook or a kitchen pro, this group ensures you **save money, get quality products, and enhance your cooking experience**.  
-
-**Join now and revolutionize your kitchen today!**
-`
+Upgrade your cooking space with high-quality kitchen products.
+`,
+        relatedProducts: [
+            {
+                name: "Non-Stick Pan Set",
+                price: "₹1,199",
+                image: "https://m.media-amazon.com/images/I/71H1pNfD5ML._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Electric Chopper",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/71XR2CkmW1L._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Knife Set (5 Pieces)",
+                price: "₹799",
+                image: "https://m.media-amazon.com/images/I/81UuYdp3bVL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Kids Toy",
         link: "https://chat.whatsapp.com/HwKqz8QPu0Y2j6doTDlEaE",
-        image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Kids Toy Deals Group
 
-Discover the best toys that kids will absolutely love — without breaking the bank.  
-
-### Benefits:
-- 🧸 **Exclusive Discounts**: Toys for all age groups at lower prices.  
-- 🎉 **Limited-Time Offers**: Only group members get early access.  
-- 🌟 **Expert Recommendations**: Tips from parents and toy enthusiasts.  
-
-### Why Join:
-Perfect for parents who want **fun, educational, and safe toys** at affordable prices.  
-
-**Join now and make your child’s playtime magical!**
-`
+Fun, educational, and affordable toys for kids.
+`,
+        relatedProducts: [
+            {
+                name: "LEGO Classic Set",
+                price: "₹1,899",
+                image: "https://m.media-amazon.com/images/I/81T1OZC4wkL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Remote Control Car",
+                price: "₹1,299",
+                image: "https://m.media-amazon.com/images/I/71azQvvJHzL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Wooden Puzzle Set",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/71tJbDHTm5L._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Hot Picks",
         link: "https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66",
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Hot Picks Group
 
-The **hottest deals curated daily** by our community.  
-
-### Why Join:
-- 🔥 **Daily Top Deals**: Get instant alerts for trending products.  
-- 🛒 **Member-Only Discounts**: Up to 50% off selected products.  
-- ⚡ **Never Miss Out**: Limited stock items delivered fast.  
-
-### What Members Say:
-“Hot Picks helped me save hundreds every month!” — Ria, Mumbai  
-
-**Join now and grab the best deals before they sell out!**
-`
+Get today's hottest trending deals.
+`,
+        relatedProducts: [
+            {
+                name: "Bluetooth Speaker",
+                price: "₹999",
+                image: "https://m.media-amazon.com/images/I/81fRH00cR1L._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Smart Fitness Band",
+                price: "₹1,499",
+                image: "https://m.media-amazon.com/images/I/71TPda7cwUL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Fast Charger Adapter",
+                price: "₹699",
+                image: "https://m.media-amazon.com/images/I/61V+X1fO4XL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Gardening and Plants",
         link: "https://chat.whatsapp.com/KqjbVusGLvgBMbd9zZ2zGz",
-        image: "https://images.unsplash.com/photo-1524594227085-4e4c1bcd0a22?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1524594227085-4e4c1bcd0a22?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Gardening & Plants Group
 
-For plant lovers and gardening enthusiasts — deals, tips, and expert advice.  
-
-### What You’ll Get:
-- 🌿 **Exclusive Plant Deals**: Seasonal plants and supplies at discounts.  
-- 🌸 **Expert Advice**: How to care, propagate, and grow your plants.  
-- 🛒 **Early Access**: Limited-stock items for members.  
-
-**Join now and grow your garden while saving money!**
-`
+For plant lovers and gardening enthusiasts.
+`,
+        relatedProducts: [
+            {
+                name: "Succulent Mini Pack (5 Plants)",
+                price: "₹799",
+                image: "https://m.media-amazon.com/images/I/61kCG8cRZgL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Organic Potting Mix",
+                price: "₹349",
+                image: "https://m.media-amazon.com/images/I/71h1FSlK6SL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Water Spray Bottle",
+                price: "₹199",
+                image: "https://m.media-amazon.com/images/I/61cMAW5c8zL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Fashion and Lifestyle",
         link: "https://chat.whatsapp.com/I9yINQEEY0wD77RInGcRPH",
-        image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Fashion & Lifestyle Deals Group
 
-Stay trendy and save on fashion, accessories, and lifestyle products.  
-
-### Benefits:
-- 👗 **Exclusive Discounts**: Clothes, accessories, and lifestyle products at low prices.  
-- 🛍️ **Member-Only Offers**: Daily updates on trending products.  
-- 🌟 **Style Tips & Reviews**: Advice from experts and community members.  
-
-**Join now to look stylish while saving big!**
-`
+Stay trendy and stylish while saving big.
+`,
+        relatedProducts: [
+            {
+                name: "Denim Jacket",
+                price: "₹1,799",
+                image: "https://m.media-amazon.com/images/I/81XgDoR0vSL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Classic Sunglasses",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/51JZB9E9eaL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Leather Wallet Combo",
+                price: "₹699",
+                image: "https://m.media-amazon.com/images/I/71E5Y0aPAnL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Christmas Magic Collection",
         link: "https://chat.whatsapp.com/IuxZtSZxpXrEr7fgTDTQXA",
-        image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Christmas Magic Collection Group
 
-Prepare for a magical Christmas with exclusive deals on festive products.  
-
-### Benefits:
-- 🎄 **Exclusive Festive Products**: Decorations, gifts, and more.  
-- 🛒 **Special Discounts**: Member-only holiday deals.  
-- 🎁 **Early Access**: Limited edition products before they sell out.  
-
-**Join now and make your Christmas unforgettable!**
-`
+Make your holidays magical with festive deals.
+`,
+        relatedProducts: [
+            {
+                name: "LED Christmas Lights",
+                price: "₹599",
+                image: "https://m.media-amazon.com/images/I/81S1lL3zDML._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Christmas Tree Mini Set",
+                price: "₹1,099",
+                image: "https://m.media-amazon.com/images/I/71bN4R+KieL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Gift Wrapping Kit",
+                price: "₹349",
+                image: "https://m.media-amazon.com/images/I/71U5FvvdnZL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Beauty and Personal Health Care",
         link: "https://chat.whatsapp.com/EXhW4sBTN8SKof54SewN2p",
-        image: "https://images.unsplash.com/photo-1588514727390-91fd5ebaef1e?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1588514727390-91fd5ebaef1e?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Beauty & Health Deals Group
 
-Get exclusive deals on skincare, health, and personal care products.  
-
-### What You’ll Get:
-- 💄 **Top Brand Discounts**: Skincare, makeup, and wellness products at low prices.  
-- 🛍️ **Daily Offers**: Member-only deals and limited stock alerts.  
-- 🌟 **Tips & Tutorials**: Learn from experts & community recommendations.  
-
-**Join now and stay radiant while saving money!**
-`
+Get exclusive deals on skincare, health, and personal care.
+`,
+        relatedProducts: [
+            {
+                name: "Vitamin C Serum",
+                price: "₹599",
+                image: "https://m.media-amazon.com/images/I/61fEtd0T0DL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Hair Growth Oil",
+                price: "₹399",
+                image: "https://m.media-amazon.com/images/I/61Dy9o2FQ1L._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Natural Face Wash",
+                price: "₹299",
+                image: "https://m.media-amazon.com/images/I/61u7BzO7HGL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
     {
         name: "Automobile",
         link: "https://chat.whatsapp.com/E8h43csFFakIdRQNqAdujc",
-        image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80",
+        image:
+            "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80",
         content: `
 ## Automobile Deals Group
 
-Get the latest deals on car accessories, maintenance, and automotive products.  
-
-### Benefits:
-- 🚗 **Exclusive Discounts**: Auto parts, accessories, and tools at great prices.  
-- 🛠️ **Expert Tips**: Maintenance, upgrades, and cost-saving hacks.  
-- ⚡ **Limited Stock Alerts**: Never miss exclusive automotive offers.  
-
-**Join now to upgrade your ride while saving big!**
-`
+Get the latest deals on car accessories and maintenance.
+`,
+        relatedProducts: [
+            {
+                name: "Car Vacuum Cleaner",
+                price: "₹999",
+                image: "https://m.media-amazon.com/images/I/61tRzbRvjXL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Tire Pressure Gauge",
+                price: "₹499",
+                image: "https://m.media-amazon.com/images/I/71mQ7a3FRoL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+            {
+                name: "Dashboard Camera",
+                price: "₹2,499",
+                image: "https://m.media-amazon.com/images/I/61rCqqXr9WL._SX679_.jpg",
+                link: "https://www.amazon.in/",
+            },
+        ],
     },
 ];
