@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { X } from "lucide-react";
 import { JoinAndWin, LimitedTimeBanner } from "./Feature";
 import { useNavigate } from "react-router-dom";
+import Popup from "./PopUp";
 const SHOP_URL = "https://clickship.in";
 const PROMO_DELAY_MS = 5000;
 
@@ -168,6 +169,9 @@ export default function MarketingLanding() {
                                     <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                                 </svg>
                             </a>
+                        </div>
+                        <div>
+                            <Popup />
                         </div>
 
                         <div className="mt-6 flex flex-wrap gap-3 items-center text-sm text-gray-600">
