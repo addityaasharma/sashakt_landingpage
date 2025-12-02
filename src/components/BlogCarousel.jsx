@@ -23,7 +23,7 @@ const BlogCarousel = () => {
             <h1 className="text-4xl font-extrabold mb-12 text-center tracking-tight text-gray-900">
                 Explore Our Blogs
             </h1>
-
+            
             {/* Horizontal Carousel */}
             <div className="flex overflow-x-auto gap-8 pb-6 snap-x snap-mandatory scrollbar-none scroll-smooth">
                 {allBlogs.map((blog, i) => {
