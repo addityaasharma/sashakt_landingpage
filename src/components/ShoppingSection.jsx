@@ -115,6 +115,13 @@ const categories = [
         whatsappLink: "https://chat.whatsapp.com/E8h43csFFakIdRQNqAdujc",
         shopLink: "https://clickship.in/collections/newly-launched",
     },
+    {
+        id: 16,
+        name: "unique find ",
+        image: "https://images.pexels.com/photos/17522515/pexels-photo-17522515.jpeg",
+        whatsappLink: "https://chat.whatsapp.com/E8h43csFFakIdRQNqAdujc",
+        shopLink: "https://clickship.in/collections/unique-finds",
+    },
 ];
 
 
