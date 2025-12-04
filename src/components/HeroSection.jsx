@@ -14,7 +14,7 @@ const heroSlides = [
         title: "Discover Ideas that Inspire 💡",
         subtitle: "Explore insightful blogs, guides, and stories tailored for creative minds.",
         buttonText: "Read Blogs",
-        buttonLink: "/blogs",
+        buttonLink: "https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66",
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const heroSlides = [
         title: "Fuel Your Curiosity 🔥",
         subtitle: "Stay ahead with trending topics, startup insights, and expert tips.",
         buttonText: "Explore Categories",
-        buttonLink: "/categories",
+        buttonLink: "https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const heroSlides = [
         title: "Join the Community 🌍",
         subtitle: "Connect with thinkers, founders, and creators through meaningful content.",
         buttonText: "Join Us",
-        buttonLink: "/community",
+        buttonLink: "https://chat.whatsapp.com/DtxEVnuARCy4bAXCxkUw66",
     },
 ];
 
