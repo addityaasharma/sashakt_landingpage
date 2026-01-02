@@ -11,8 +11,8 @@ const BlogEditor = () => {
 
   // Single API Configuration
   const API_CONFIG = {
-    endpoint: 'https://your-api.com/api/blog', // Your single API endpoint
-    authToken: 'YOUR_AUTH_TOKEN' // Add your token here
+    endpoint: 'http://164.52.220.61:8000/user/blog',
+    authToken: localStorage.getItem('token')
   };
 
   // Function to convert Editor.js blocks to HTML

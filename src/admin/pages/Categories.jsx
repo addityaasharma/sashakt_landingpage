@@ -12,9 +12,9 @@ const Categories = () => {
     const [showModal, setShowModal] = useState(false);
     const [categoryName, setCategoryName] = useState("");
 
-    const CATEGORY_API = "https://your-api.com/api/admin/categories";
+    const CATEGORY_API = "http://164.52.220.61:8000/user/category";
     const DELETE_CATEGORY_API = (id) =>
-        `https://your-api.com/api/admin/categories/${id}`;
+        `http://164.52.220.61:8000/user/category/${id}`;
 
     useEffect(() => {
         if (!token || token === "undefined" || token === "null") {

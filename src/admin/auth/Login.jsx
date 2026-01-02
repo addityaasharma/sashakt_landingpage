@@ -9,7 +9,7 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    const LOGIN_API_URL = "https://your-api.com/api/login";
+    const LOGIN_API_URL = "http://164.52.220.61:8000/user/login";
 
     useEffect(() => {
         const token = localStorage.getItem("token");

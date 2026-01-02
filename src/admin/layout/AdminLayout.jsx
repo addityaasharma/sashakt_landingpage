@@ -5,7 +5,7 @@ const AdminLayout = () => {
 
     const logout = () => {
         localStorage.removeItem("token");
-        navigate("/sashaktlogin", { replace: true });
+        navigate("admin/sashaktlogin", { replace: true });
     };
 
     return (

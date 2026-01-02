@@ -11,9 +11,9 @@ const Blogs = () => {
 
   const [selectedBlog, setSelectedBlog] = useState(null);
 
-  const BLOGS_API = "https://your-api.com/api/admin/blogs";
+  const BLOGS_API = "http://164.52.220.61:8000/user/public/blogs";
   const DELETE_BLOG_API = (id) =>
-    `https://your-api.com/api/admin/blogs/${id}`;
+    `http://164.52.220.61:8000/user/blog/${id}`;
 
   useEffect(() => {
     if (!token || token === "undefined" || token === "null") {
