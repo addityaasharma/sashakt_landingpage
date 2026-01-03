@@ -11,9 +11,9 @@ const Blogs = () => {
 
   const [selectedBlog, setSelectedBlog] = useState(null);
 
-  const BLOGS_API = "http://164.52.220.61:8000/user/public/blogs";
+  const BLOGS_API = "https://googlyy.com/user/public/blogs";
   const DELETE_BLOG_API = (id) =>
-    `http://164.52.220.61:8000/user/blog/${id}`;
+    `https://googlyy.com/user/blog/${id}`;
 
   useEffect(() => {
     if (!token || token === "undefined" || token === "null") {
