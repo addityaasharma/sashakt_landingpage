@@ -26,8 +26,8 @@ const Settings = () => {
 
   const token = localStorage.getItem("token");
 
-  const USER_API = "http://164.52.220.61:8000/user/me";
-  const CHANGE_PASSWORD_API = "http://164.52.220.61:8000/user/password";
+  const USER_API = "https://googlyy.com/user/me";
+  const CHANGE_PASSWORD_API = "https://googlyy.com/user/password";
 
   // 🔁 Fetch user
   useEffect(() => {
