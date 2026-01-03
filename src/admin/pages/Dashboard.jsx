@@ -11,7 +11,7 @@ const BlogEditor = () => {
 
   // Single API Configuration
   const API_CONFIG = {
-    endpoint: 'http://164.52.220.61:8000/user/blog',
+    endpoint: 'https://googlyy.com/user/blog',
     authToken: localStorage.getItem('token')
   };
 
