@@ -12,9 +12,9 @@ const Categories = () => {
     const [showModal, setShowModal] = useState(false);
     const [categoryName, setCategoryName] = useState("");
 
-    const CATEGORY_API = "http://164.52.220.61:8000/user/category";
+    const CATEGORY_API = "https://googlyy.com/user/category";
     const DELETE_CATEGORY_API = (id) =>
-        `http://164.52.220.61:8000/user/category/${id}`;
+        `https://googlyy.com/user/category/${id}`;
 
     useEffect(() => {
         if (!token || token === "undefined" || token === "null") {
